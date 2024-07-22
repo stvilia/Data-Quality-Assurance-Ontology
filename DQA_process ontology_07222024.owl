@@ -1,0 +1,2437 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#"
+     xml:base="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71"
+     xmlns:dqa="http://local.tamu.edu/djlee/ns/dqa#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#collects -->
+
+    <owl:ObjectProperty rdf:about="http://local.tamu.edu/djlee/ns/dqa#collects">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#contributes -->
+
+    <owl:ObjectProperty rdf:about="http://local.tamu.edu/djlee/ns/dqa#contributes">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#creates -->
+
+    <owl:ObjectProperty rdf:about="http://local.tamu.edu/djlee/ns/dqa#creates">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#hasQualityActiveModel -->
+
+    <owl:ObjectProperty rdf:about="http://local.tamu.edu/djlee/ns/dqa#hasQualityActiveModel">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Model_Active"/>
+        <rdfs:comment>Indicates that a Quality Model is applicable to a specific InformationProduct</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#hasQualityProblem -->
+
+    <owl:ObjectProperty rdf:about="http://local.tamu.edu/djlee/ns/dqa#hasQualityProblem">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Problem"/>
+        <rdfs:comment>Connects inforamtion Product to its Quality Problems.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#hasQualityRequiredModel -->
+
+    <owl:ObjectProperty rdf:about="http://local.tamu.edu/djlee/ns/dqa#hasQualityRequiredModel">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Model_Required"/>
+        <rdfs:comment>This property indicates that there are specific required quality levels for an information product.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#hasSource -->
+
+    <owl:ObjectProperty rdf:about="http://local.tamu.edu/djlee/ns/dqa#hasSource">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Problem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
+        <rdfs:comment>Connects Problem to Problem Source</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#identifierdBy -->
+
+    <owl:ObjectProperty rdf:about="http://local.tamu.edu/djlee/ns/dqa#identifierdBy">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Problem"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Model_Active"/>
+        <rdfs:comment>Specifies that a QualityProblem is identified through specific QualityActiveModel.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#involvedIn -->
+
+    <owl:ObjectProperty rdf:about="http://local.tamu.edu/djlee/ns/dqa#involvedIn">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+        <rdfs:range rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+        <rdfs:comment>Not clear - the usage and purpose</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://local.tamu.edu/djlee/ns/dqa#isPartOf"/>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#requiresExpertise -->
+
+    <owl:ObjectProperty rdf:about="http://local.tamu.edu/djlee/ns/dqa#requiresExpertise">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+        <rdfs:range rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#verifies -->
+
+    <owl:ObjectProperty rdf:about="http://local.tamu.edu/djlee/ns/dqa#verifies">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Model_Active"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Model_Required"/>
+        <rdfs:comment>Establishes that the QualityActiveModel verifies compliance with a Quality Required Model.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsActivities -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsActivities">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Activity_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsDimensions -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsDimensions">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#comprisedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#comprisedOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#curates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#curates">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Person"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#evaluateDQA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#evaluateDQA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Process_Improvement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Evaluation"/>
+        <rdfs:comment>connects the process of DQA Process Improvement to DQA Process Evaluation Activity</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#intervenesInDQA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#intervenesInDQA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Process_Improvement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Intervention"/>
+        <rdfs:comment>Connects a DQA process to activities aimed at its improvement.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#involvesCommunication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#involvesCommunication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Process"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Communication"/>
+        <rdfs:comment>Links the DQA process to its communication activities, emphasizing the importance of documentation and discussion in quality assurance.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#involvesEvaluation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#involvesEvaluation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Process"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Evaluation"/>
+        <rdfs:comment>Indicates that the DQA process involves a systematic evaluation of data products.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#involvesIntervention -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#involvesIntervention">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Process"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Intervention"/>
+        <rdfs:comment>Connects the DQA process to interventions that arise from the evaluation activities.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#isDescribedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#isDescribedBy">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Data"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Metadata"/>
+        <rdfs:comment>A data product is described by the associated metadata product.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#isMeasuredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#isMeasuredBy">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:comment>This is an object propert that connects dimensions to metrics. In particular, a demension is measured by a specific metric(s).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#isMediatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#isMediatedBy">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#isPerformedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#isPerformedBy">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+        <rdfs:range rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#mediates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#mediates">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#playRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#playRole">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#provides -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#provides">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#targets -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#targets"/>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#usedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#usedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Method"/>
+        <rdfs:range rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/TR/prov-o#isAttributedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/prov-o#isAttributedTo">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/TR/prov-o#isDerivedFrom"/>
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/TR/prov-o#isDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/prov-o#isDerivedFrom">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/TR/prov-o#isGeneratedBy"/>
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/TR/prov-o#isGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/prov-o#isGeneratedBy">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#isMeasurementOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dqv#isMeasurementOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Quality_Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#motivatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/oa#motivatedBy">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Objective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3.org/TR/prov-o/#actedOnBehalfOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3.org/TR/prov-o/#actedOnBehalfOf">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+        <rdfs:range rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3.org/TR/prov-o/#allocatedBy -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3.org/TR/prov-o/#allocatedBy">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Role"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#DivisionOfLabor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3.org/TR/prov-o/#hasPrimarySource -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3.org/TR/prov-o/#hasPrimarySource">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+        <rdfs:comment>Not clear - Is Metadata a primary source for Agent?</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3.org/TR/prov-o/#isAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3.org/TR/prov-o/#isAssociatedWith">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProfessionalDevelopment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3.org/TR/prov-o/#used -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3.org/TR/prov-o/#used">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3.org/TR/vocab-duv/#hasDistributor -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3.org/TR/vocab-duv/#hasDistributor">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+        <rdfs:range rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3.org/TR/vocab-duv/#hasFeedback -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3.org/TR/vocab-duv/#hasFeedback">
+        <rdfs:domain rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dqv#UserQualityFeedback"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3.org/TR/vocab-duv/#refersTo -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3.org/TR/vocab-duv/#refersTo">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:range rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ReferenceSource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#qualityMeasurementValue -->
+
+    <owl:DatatypeProperty rdf:about="http://local.tamu.edu/djlee/ns/dqa#qualityMeasurementValue"/>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#qualityMeasurementValueRequired -->
+
+    <owl:DatatypeProperty rdf:about="http://local.tamu.edu/djlee/ns/dqa#qualityMeasurementValueRequired">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Quality_Measurement"/>
+        <rdfs:comment>This property contains a value indicating the required level quality of a particular measurement.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#availableFunding -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#availableFunding">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#cost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#cost">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#criticalityValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#criticalityValue">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Contains a number indicating the relative value of a dataset to RDR</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#currentQuality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#currentQuality">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#priority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#priority">
+        <rdfs:domain rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Contains the ovarall criticality score for dataset based on its criticality value, available funding, cost, current quality, and available expertise.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Add -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Add">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#targets"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#ApprovalReview -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#ApprovalReview">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#QualityCertificate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#CharacteristicData -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#CharacteristicData">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#QualityStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Communication -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Communication">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://local.tamu.edu/djlee/ns/dqa#involvedIn"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Intervention"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://local.tamu.edu/djlee/ns/dqa#involvedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Evaluation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Ask"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Ask_permission_to_intervene"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Comment"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Confirm"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Inform"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Interact"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Release"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Share"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#motivatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Objective"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Community -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Community">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Complaint -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Complaint">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#ComplianceStatement -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#ComplianceStatement">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ReferenceSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#ConformanceResult -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#ConformanceResult">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#DataQuality"/>
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#MetadataQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Correction -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Correction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#targets"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Creation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+        <rdfs:comment>Equivalent to:
+DDI:ErrorCorrection
+EIA:ErrorCorrection</rdfs:comment>
+        <skos:definition>ISO9000: 
+Action to eliminate a detected nonconformity</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#CorrectiveAction -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#CorrectiveAction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#targets"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Creation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+        <skos:definition>ISO9000:
+Action to eliminate the cause of a nonconformity and to prevent recurrence</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Curator -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Curator">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#curates"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3.org/TR/prov-o/#actedOnBehalfOf"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Person"/>
+        <rdfs:seeAlso>DDI:Evaluator
+DDI:ReviewerRole</rdfs:seeAlso>
+        <skos:definition>ISO9000
+Person who assist the organization on quality management system realization, giving advice or information</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#CustomerSatisfaction -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#CustomerSatisfaction">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Data -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Data">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#comprisedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Measurement"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#isDescribedBy"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Metadata"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#DataAccuracyRecord -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#DataAccuracyRecord">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#DataQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#DataCompletenessRecord -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#DataCompletenessRecord">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#DataQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#DataQuality -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#DataQuality">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Delete -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Delete">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#targets"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Description -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Description">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#QualityStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Disclaimer -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Disclaimer">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Dispute -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Dispute">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#DivisionOfLabor -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#DivisionOfLabor">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#EducationalProgram -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#EducationalProgram">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProfessionalDevelopment"/>
+        <rdfs:comment>ISO16363</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#InformationProduct -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#InformationProduct">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://local.tamu.edu/djlee/ns/dqa#hasQualityActiveModel"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Model_Active"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://local.tamu.edu/djlee/ns/dqa#hasQualityProblem"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Problem"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://local.tamu.edu/djlee/ns/dqa#hasQualityRequiredModel"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Model_Required"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://local.tamu.edu/djlee/ns/dqa#requiresExpertise"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/TR/prov-o#isAttributedTo"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/TR/prov-o#isAttributedTo"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/TR/prov-o#isDerivedFrom"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/TR/prov-o#isDerivedFrom"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/TR/prov-o#isGeneratedBy"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/TR/prov-o#isGeneratedBy"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3.org/TR/vocab-duv/#hasDistributor"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:seeAlso>dqv:ResearchDataset
+DDI:Dataset</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Insert -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Insert">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#targets"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#InspectionResult -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#InspectionResult">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#DataQuality"/>
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#MetadataQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Instrument -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Instrument">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+        <rdfs:comment>How different is Instrument from Measuring Equipment</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Intervention -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Intervention">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Add"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Correction"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#CorrectiveAction"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Delete"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Insert"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#PreventiveAction"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Repair"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Replace"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Revision"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Rework"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Scrap"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Update"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#motivatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Objective"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+        <rdfs:comment>Replacement of  DQV:QualityMeasurement</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Manager -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Manager">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Curator"/>
+        <skos:definition>DQA
+Person or group of people who directs and controls DQA tasks at higher level
+
+ISO9000
+Person or group of people who directs and controls an organization at the highest level</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#MeasuringEquipment -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#MeasuringEquipment">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Metadata -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Metadata">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#MetadataQuality -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#MetadataQuality">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Mission -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Mission">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ReferenceSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#PreventiveAction -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#PreventiveAction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#targets"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Creation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+        <skos:definition>ISO9000:
+Action to eliminate the cause of a potential nonconformithy or other potential undesirable situation</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#ProcessMetadata -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#ProcessMetadata">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Metadata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#ProductDimension -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#ProductDimension">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#ProfessionalDevelopment -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#ProfessionalDevelopment">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3.org/TR/prov-o/#isAssociatedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Group"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+        <rdfs:comment>ISO16363</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#ProvenanceMetadata -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#ProvenanceMetadata">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProcessMetadata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Provider -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Provider">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#provides"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Person"/>
+        <rdfs:seeAlso>ISO9000
+Person or organizaiton that could or does receive a product or a service that is intended for or required by this person or organization</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#QualityModel -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#QualityModel">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Objective"/>
+        <rdfs:comment>The set of attributes that are used to define a Quality Objective.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#QualityScheme -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#QualityScheme">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ReferenceSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#QualityStatement -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#QualityStatement">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Quality_Model_Active -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Quality_Model_Active">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://local.tamu.edu/djlee/ns/dqa#verifies"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Model_Required"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#QualityModel"/>
+        <rdfs:comment>the set of criteria operationalized through specific metrics are that used to measure the quaity of a dataset</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Quality_Model_Required -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Quality_Model_Required">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#QualityModel"/>
+        <rdfs:comment>Defines specific levels of quality for the quality criteria of the active model that must be met to ensure the quality of a dataset.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Quality_Objective -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Quality_Objective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Objective"/>
+        <rdfs:comment>Quality related object or objective the RDR needs to obtain (source: ISO 9000).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Quality_Problem -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Quality_Problem">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://local.tamu.edu/djlee/ns/dqa#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://local.tamu.edu/djlee/ns/dqa#identifierdBy"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Model_Active"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Identifies issues in Dataset&apos;s current quality relative to the required quality levels indicated in Quality Model Required..</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#QuantitativeResult -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#QuantitativeResult">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#DataQuality"/>
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#MetadataQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#ReferenceMetadata -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#ReferenceMetadata">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Metadata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#ReferenceSource -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#ReferenceSource">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#targets"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+        <rdfs:comment>IDQAO:QualityAssessmentProcedure
+Superclass for different assessment procedures.</rdfs:comment>
+        <rdfs:comment>ISO19157</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Repair -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Repair">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#targets"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+        <skos:definition>ISO9000
+Action on a nonconforming product or service to make it acceptable for the intended use</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Replace -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Replace">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#targets"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Role -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Role">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3.org/TR/prov-o/#allocatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#DivisionOfLabor"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+        <skos:definition>PROV:Role
+A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Scope -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Scope">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ReferenceSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Software -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Software">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+        <rdfs:comment>ISO16363</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Strategy -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Strategy">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ReferenceSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#StructuralMetadata -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#StructuralMetadata">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Metadata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Tool -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#User -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#User">
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Vision -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Vision">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ReferenceSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#prob_Activity_Contradiction -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#prob_Activity_Contradiction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
+        <rdfs:comment>Congradictions in and between activity components causing quality problems.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#prob_Activity_Contradiction_Resource -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#prob_Activity_Contradiction_Resource">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#prob_Activity_Contradiction"/>
+        <rdfs:comment>The Resource Provision related problems, includes human resources, their expertise. Source: ISO 8000 2016</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#prob_Activity_Contradiction_Tools -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#prob_Activity_Contradiction_Tools">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#prob_Activity_Contradiction"/>
+        <rdfs:comment>Data management tool - infrastructure related problems. Source: ISO 8000-2016</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Standard -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Standard">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ReferenceSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/AgentIdentifier -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/AgentIdentifier">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/Identifier -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/Identifier">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+        <rdfs:comment>ISO16363</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/datacite/ResourceIdentifier -->
+
+    <owl:Class rdf:about="http://purl.org/spar/datacite/ResourceIdentifier">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Activity_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Activity_Type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Approve -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Approve">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Ask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Ask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Ask_permission_to_intervene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Ask_permission_to_intervene">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+        <rdfs:comment>ISO9000 Permission
+Action of giving formal authority
+
+Not clear how this action is related to DQA? Is this about communicating about Accessibility?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Assign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Assign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Comment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Comment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Confirm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Confirm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Creation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Creation">
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+        <rdfs:comment>This data creation process</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Evaluation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Evaluation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#motivatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Objective"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+        <rdfs:comment>Activity used to assess the quality of DQA process</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Intervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Intervention">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#motivatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Objective"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+        <rdfs:comment>Activity used to improve the quality of DQA process</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Process">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#involvesCommunication"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Communication"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#involvesEvaluation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Evaluation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#involvesIntervention"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Intervention"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Process"/>
+        <rdfs:comment>Represents the overall data quality assurance process, encompassing all activities aimed at ensuring data quality.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Process_Improvement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Process_Improvement">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#evaluateDQA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Evaluation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#intervenesInDQA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#DQA_Intervention"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Decontextualizing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Decontextualizing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Activity_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Define -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Define">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Evaluation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Evaluation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Approve"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Assign"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Define"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Measure"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Observe"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Organize"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Plan"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#motivatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Objective"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#FullInspection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#FullInspection">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#usedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Evaluation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Group">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#mediates"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#DivisionOfLabor"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#mediates"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ReferenceSource"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#IndirectEvaluation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#IndirectEvaluation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#usedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Evaluation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Inform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Inform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Interact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Interact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Measure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Measure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Measurement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Measurement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Observation"/>
+        <rdfs:comment>This is research measurements, research data</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Method">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Monitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Monitor">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#usedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Evaluation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Objective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Objective">
+        <rdfs:comment>RDR&apos;s object - The objective the RDR nees to achieve.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Observation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Observation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Observe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Observe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Organize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Organize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Plan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Plan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Process"/>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Provenance_Dependent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Provenance_Dependent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Activity_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Quality_Measurement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Quality_Measurement">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#isMeasurementOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Observation"/>
+        <rdfs:comment>Represents the evaluation of a specific data (source: DQV).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Rate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Rate">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#usedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Evaluation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Release -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Release">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Representation_Dependent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Representation_Dependent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Activity_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Review">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#usedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Evaluation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Revision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Revision">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#targets"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Rework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Rework">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#targets"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#SampleBasedInspection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#SampleBasedInspection">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#usedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Evaluation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Scrap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Scrap">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#targets"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Share -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Share">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Stability_Dependent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Stability_Dependent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Activity_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Test">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#usedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Evaluation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Update -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Update">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#targets"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#prob_Changes_In_Data_Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#prob_Changes_In_Data_Entity">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsActivities"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Provenance_Dependent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsActivities"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Stability_Dependent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsDimensions"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsDimensions"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#prob_Changes_In_Underlying_Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#prob_Changes_In_Underlying_Entity">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsActivities"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Provenance_Dependent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsActivities"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Stability_Dependent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsDimensions"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#prob_Context_Change -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#prob_Context_Change">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsActivities"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Decontextualizing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsActivities"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Provenance_Dependent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsDimensions"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#prob_Mapping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#prob_Mapping">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsActivities"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Provenance_Dependent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsActivities"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Representation_Dependent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsDimensions"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#affectsDimensions"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#Dimension -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dqv#Dimension">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://local.tamu.edu/djlee/ns/dqa#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#QualityModel"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#isMeasuredBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+        <rdfs:comment>DDI; Dcube; DUV:Motivation; OA:Motivation</rdfs:comment>
+        <rdfs:seeAlso>DDI:QualityScheme</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#Metric -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dqv#Metric">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3.org/TR/vocab-duv/#refersTo"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ReferenceSource"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#QualityAnnotation -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dqv#QualityAnnotation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#comprisedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Quality_Measurement"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Metadata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#QualityCertificate -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dqv#QualityCertificate">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#QualityPolicy -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dqv#QualityPolicy">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ReferenceSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#UserQualityFeedback -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dqv#UserQualityFeedback">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3.org/TR/prov-o/#Activity -->
+
+    <owl:Class rdf:about="https://www.w3.org/TR/prov-o/#Activity">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#isMediatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#isMediatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Group"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#isPerformedBy"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#motivatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Objective"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>PROV:Activity
+An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3.org/TR/prov-o/#Agent -->
+
+    <owl:Class rdf:about="https://www.w3.org/TR/prov-o/#Agent">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://local.tamu.edu/djlee/ns/dqa#collects"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://local.tamu.edu/djlee/ns/dqa#contributes"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://local.tamu.edu/djlee/ns/dqa#creates"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#mediates"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#playRole"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Role"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3.org/TR/prov-o/#hasPrimarySource"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Metadata"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3.org/TR/prov-o/#hasPrimarySource"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ReferenceSource"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3.org/TR/prov-o/#used"/>
+                <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3.org/TR/vocab-duv/#hasFeedback"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#UserQualityFeedback"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:seeAlso>DDI: AgentType</rdfs:seeAlso>
+        <rdfs:seeAlso>PROV:Agent
+An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent&apos;s activity.</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3.org/TR/prov-o/#Organization -->
+
+    <owl:Class rdf:about="https://www.w3.org/TR/prov-o/#Organization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Group"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3.org/TR/prov-o/#Person -->
+
+    <owl:Class rdf:about="https://www.w3.org/TR/prov-o/#Person">
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Accessability -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Accessability">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+        <rdfs:comment>IDQAO</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Accuracy -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Accuracy">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Actionability -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Actionability">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Completeness -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Completeness">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <rdfs:comment>IDQAO:Completeness</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Consistency -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Consistency">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <rdfs:comment>IDQAO:ConsistentRepresentation</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Credibility -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Credibility">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Currency -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Currency">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#EthicalCompliance -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#EthicalCompliance">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Integrity -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Integrity">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Interoperability -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Interoperability">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition>IDQAO: The information in appropriate languages, symbols, and units, and the definitions are clear.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#LegalCompliance -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#LegalCompliance">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Portability -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Portability">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Precision -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Precision">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Recoverability -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Recoverability">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Security -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Security">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Simplicity -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Simplicity">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Traceability -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Traceability">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Understanability -->
+
+    <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Understanability">
+        <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
