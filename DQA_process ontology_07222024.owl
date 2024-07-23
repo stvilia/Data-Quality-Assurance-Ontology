@@ -2294,6 +2294,7 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Accuracy">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
+        <rdfs:comment>The degree to which data is a correct or valid representation of an object, relation, process, or event.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2312,6 +2313,7 @@ An agent is something that bears some form of responsibility for an activity tak
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment>IDQAO:Completeness</rdfs:comment>
+        <rdfs:comment>The extent to which data is a complete representation of another object, relation, process, or event; The extent to which the sample employed yields a result which is representative of the data within the defined scope of data quality.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2322,6 +2324,7 @@ An agent is something that bears some form of responsibility for an activity tak
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment>IDQAO:ConsistentRepresentation</rdfs:comment>
+        <rdfs:comment>The extent of consistency in using the same values or structure for representing an object, relation, process, or event; The degree of expected uniformity of the results obtained for a data quality evaluation.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2330,6 +2333,7 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Credibility">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+        <rdfs:comment>The degree of reputation or credibility of data; The degree of trustworthiness of a data quality result.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2338,6 +2342,7 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Currency">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
+        <rdfs:comment>The age of data.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2346,6 +2351,8 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#EthicalCompliance">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+        <rdfs:comment>The extent to which data complies with the ethical principles of a particular community or culture
+The extent to which data preserves people’s privacy and does not disclose confidential information.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2363,6 +2370,7 @@ An agent is something that bears some form of responsibility for an activity tak
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Interoperability">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <rdfs:comment>The extent of data and metadata being interoperable and usable in other system.</rdfs:comment>
         <skos:definition>IDQAO: The information in appropriate languages, symbols, and units, and the definitions are clear.</skos:definition>
     </owl:NamedIndividual>
     
@@ -2372,6 +2380,7 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#LegalCompliance">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+        <rdfs:comment>The extent to which data complies with the rules, laws and regulations of a particular community or a particular country.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2380,6 +2389,7 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Portability">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+        <rdfs:comment>The extent of data being installed and/or replaced.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2388,6 +2398,7 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Precision">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
+        <rdfs:comment>The extent of precision/data of data in representing an object, relation, process, or event.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2412,6 +2423,7 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Simplicity">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
+        <rdfs:comment>The extent of cognitive complexity of data and appropriate amounts of resources for the expected levels of performance.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2420,6 +2432,7 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Traceability">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+        <rdfs:comment>The ability to trace the history, application, or location of an object.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2428,10 +2441,11 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Understanability">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
+        <rdfs:comment>The degree to which data has attributes that enable it to be read and interpreted by users.</rdfs:comment>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
