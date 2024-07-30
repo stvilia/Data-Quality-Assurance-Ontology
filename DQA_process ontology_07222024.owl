@@ -624,6 +624,8 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+        <rdfs:comment>Communication class describes DQA communication activity. 
+Agent performs Communication activity to share information about and coordinate Evaluation and Intervention activities using communication Actions.</rdfs:comment>
     </owl:Class>
     
 
@@ -632,6 +634,7 @@
 
     <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Community">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Group"/>
+        <rdfs:comment>Used to describe the Agent type Community</rdfs:comment>
     </owl:Class>
     
 
@@ -744,6 +747,7 @@ Person who assist the organization on quality management system realization, giv
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+        <rdfs:comment>Described the data part of the data product.</rdfs:comment>
     </owl:Class>
     
 
@@ -814,6 +818,8 @@ Person who assist the organization on quality management system realization, giv
 
     <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#DivisionOfLabor">
         <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+        <rdfs:comment>Group (Organization and Community) mediates DQA Actvitity through Division Of Labor.
+Division of Labor defines Activity specific allocation of Roles.</rdfs:comment>
     </owl:Class>
     
 
@@ -896,8 +902,7 @@ Person who assist the organization on quality management system realization, giv
                 <owl:someValuesFrom rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:seeAlso>dqv:ResearchDataset
-DDI:Dataset</rdfs:seeAlso>
+        <rdfs:seeAlso>Main class for Information/Data Product.</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1016,7 +1021,10 @@ DDI:Dataset</rdfs:seeAlso>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
-        <rdfs:comment>Replacement of  DQV:QualityMeasurement</rdfs:comment>
+        <rdfs:comment>Intervention class describes an intervention activity in the quality of a data product. 
+Intervention comprises intervention Actions. 
+Agent can enhance data product quality by intervining and preventing data Quality Problems. 
+Agent can enhance data product quality by intervining in the data product itself, by scrapping or reworking the product.</rdfs:comment>
     </owl:Class>
     
 
@@ -1025,6 +1033,7 @@ DDI:Dataset</rdfs:seeAlso>
 
     <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <rdfs:comment>Intrinsic DQ can be assessed by measuring internal/intrinsic characteristics of data in relation to some general or context specific reference source (e.g., scientific reference databases and models,  standards or sources of a particular culture).</rdfs:comment>
     </owl:Class>
     
 
@@ -1054,6 +1063,7 @@ Person or group of people who directs and controls an organization at the highes
 
     <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Metadata">
         <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#InformationProduct"/>
+        <rdfs:comment>Describes the metadata part of the data product.</rdfs:comment>
     </owl:Class>
     
 
@@ -1102,6 +1112,7 @@ Action to eliminate the cause of a potential nonconformithy or other potential u
 
     <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#ProductDimension">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <rdfs:comment>. DQAO’s product-level category, on the other hand, combines the reputational dimension with platform and organizational characteristics and requirements for a data product that makes it usable.</rdfs:comment>
     </owl:Class>
     
 
@@ -1125,6 +1136,7 @@ Action to eliminate the cause of a potential nonconformithy or other potential u
 
     <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#ProvenanceMetadata">
         <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProcessMetadata"/>
+        <rdfs:comment>Provenance Metadata is a record of the Activities involved in the creation and manipulation of a Data Product.</rdfs:comment>
     </owl:Class>
     
 
@@ -1218,7 +1230,7 @@ Person or organizaiton that could or does receive a product or a service that is
                 <owl:someValuesFrom rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Model_Active"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:comment>Identifies issues in Dataset&apos;s current quality relative to the required quality levels indicated in Quality Model Required..</rdfs:comment>
+        <rdfs:comment>Identifies issues in Information Product&apos;s current quality relative to the required quality levels indicated in Quality Model Required..</rdfs:comment>
     </owl:Class>
     
 
@@ -1320,6 +1332,15 @@ A role is the function of an entity or agent with respect to an activity, in the
     
 
 
+    <!-- http://local.tamu.edu/djlee/ns/dqa#Standard -->
+
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Standard">
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ReferenceSource"/>
+        <rdfs:comment>Source: dcTerms</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://local.tamu.edu/djlee/ns/dqa#Strategy -->
 
     <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Strategy">
@@ -1338,7 +1359,9 @@ A role is the function of an entity or agent with respect to an activity, in the
 
     <!-- http://local.tamu.edu/djlee/ns/dqa#Tool -->
 
-    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Tool">
+        <rdfs:comment>This class describes Tools, including cognitive tools such as Methods, Metrics, Dimensions, Division of Labor, etc.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1371,7 +1394,7 @@ A role is the function of an entity or agent with respect to an activity, in the
 
     <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#prob_Activity_Contradiction_Resource">
         <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#prob_Activity_Contradiction"/>
-        <rdfs:comment>The Resource Provision related problems, includes human resources, their expertise. Source: ISO 8000 2016</rdfs:comment>
+        <rdfs:comment>The DQA Resource Provision related problems, includes human resources, their expertise. Source: ISO 8000 2016</rdfs:comment>
     </owl:Class>
     
 
@@ -1381,14 +1404,6 @@ A role is the function of an entity or agent with respect to an activity, in the
     <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#prob_Activity_Contradiction_Tools">
         <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#prob_Activity_Contradiction"/>
         <rdfs:comment>Data management tool - infrastructure related problems. Source: ISO 8000-2016</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/dc/terms/Standard -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/Standard">
-        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ReferenceSource"/>
     </owl:Class>
     
 
@@ -1427,6 +1442,7 @@ A role is the function of an entity or agent with respect to an activity, in the
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
             </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:comment>DQA Activities are comprised of Actions</rdfs:comment>
     </owl:Class>
     
 
@@ -1493,7 +1509,7 @@ Not clear how this action is related to DQA? Is this about communicating about A
 
     <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Creation">
         <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
-        <rdfs:comment>This data creation process</rdfs:comment>
+        <rdfs:comment>This is data Creation activity.</rdfs:comment>
     </owl:Class>
     
 
@@ -1508,7 +1524,7 @@ Not clear how this action is related to DQA? Is this about communicating about A
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
-        <rdfs:comment>Activity used to assess the quality of DQA process</rdfs:comment>
+        <rdfs:comment>Activity used to assess the design and operationalization of the DQA Process itself.</rdfs:comment>
     </owl:Class>
     
 
@@ -1523,7 +1539,7 @@ Not clear how this action is related to DQA? Is this about communicating about A
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
-        <rdfs:comment>Activity used to improve the quality of DQA process</rdfs:comment>
+        <rdfs:comment>Activity is used describe interventions in the DQA Process itself.</rdfs:comment>
     </owl:Class>
     
 
@@ -1571,6 +1587,7 @@ Not clear how this action is related to DQA? Is this about communicating about A
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Process"/>
+        <rdfs:comment>This class describes the process of a DQA Process improvement itself.</rdfs:comment>
     </owl:Class>
     
 
@@ -1579,6 +1596,10 @@ Not clear how this action is related to DQA? Is this about communicating about A
 
     <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Decontextualizing">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Activity_Type"/>
+        <rdfs:comment>Decontextualizing ― activities that use information outside its original context of creation
+(for instance, an activity may remove data products from their original contexts and
+aggregate them into a new collection to support specific information needs or tasks.) 
+https://doi.org/10.1002/asi.20652</rdfs:comment>
     </owl:Class>
     
 
@@ -1643,6 +1664,11 @@ Not clear how this action is related to DQA? Is this about communicating about A
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
+        <rdfs:comment>Evaluation activity includes quality conceptualization and measurement. 
+Evaluation is performed by some Agent. 
+Its Objective is to evaluate an informaiton product&apos;s quality. 
+Evaluation is comprised of Action. 
+It is mediated by Tool.</rdfs:comment>
     </owl:Class>
     
 
@@ -1677,6 +1703,7 @@ Not clear how this action is related to DQA? Is this about communicating about A
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+        <rdfs:comment>Used to describe the Agent type Group.</rdfs:comment>
     </owl:Class>
     
 
@@ -1796,7 +1823,9 @@ Not clear how this action is related to DQA? Is this about communicating about A
 
     <!-- http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Process -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Process"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Process">
+        <rdfs:comment>Parent class for DQA Process.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1804,6 +1833,8 @@ Not clear how this action is related to DQA? Is this about communicating about A
 
     <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Provenance_Dependent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Activity_Type"/>
+        <rdfs:comment>Provenance-Dependent activities will be affected by any quality deficiencies in the creation and mediation process metadata of the information product. 
+https://doi.org/10.1002/asi.20652</rdfs:comment>
     </owl:Class>
     
 
@@ -1818,7 +1849,8 @@ Not clear how this action is related to DQA? Is this about communicating about A
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Observation"/>
-        <rdfs:comment>Represents the evaluation of a specific data (source: DQV).</rdfs:comment>
+        <rdfs:comment>Represents the evaluation of a specific data (source: DQV);
+Describes quality measurements.</rdfs:comment>
     </owl:Class>
     
 
@@ -1849,6 +1881,8 @@ Not clear how this action is related to DQA? Is this about communicating about A
 
     <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Representation_Dependent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Activity_Type"/>
+        <rdfs:comment>Representation Dependent ― activities that depend on how well data represents another entity, phenomenon, or event. 
+https://doi.org/10.1002/asi.2065</rdfs:comment>
     </owl:Class>
     
 
@@ -1935,6 +1969,8 @@ Not clear how this action is related to DQA? Is this about communicating about A
 
     <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Stability_Dependent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Activity_Type"/>
+        <rdfs:comment>Stability Dependent ― activities that depend on how stable the data product or its underlying entity(s) is
+https://doi.org/10.1002/asi.2065</rdfs:comment>
     </owl:Class>
     
 
@@ -1995,6 +2031,8 @@ Not clear how this action is related to DQA? Is this about communicating about A
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
+        <rdfs:comment>This class describes DQ problems caused by changes in the data itself.
+https://doi.org/10.1002/asi.20652 Stvilia&apos;s Information Quality Assessment Framework.</rdfs:comment>
     </owl:Class>
     
 
@@ -2021,6 +2059,7 @@ Not clear how this action is related to DQA? Is this about communicating about A
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
+        <rdfs:comment>This class represents a type of DQ problems that occur in a data product due to changes in its underlying entity(s).</rdfs:comment>
     </owl:Class>
     
 
@@ -2047,6 +2086,9 @@ Not clear how this action is related to DQA? Is this about communicating about A
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
+        <rdfs:comment>Any change in context, whether it be temporal or spatial, can change how DQ is
+understood and evaluated, and can lead to an DQ problem. An data product can be of good quality in its original context but can become of lower quality once it is moved to a different context.
+https://doi.org/10.1002/asi.20652</rdfs:comment>
     </owl:Class>
     
 
@@ -2079,6 +2121,8 @@ Not clear how this action is related to DQA? Is this about communicating about A
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
+        <rdfs:comment>Mapping-related data quality problems arise when there is incomplete, ambiguous, inaccurate, inconsistent, or redundant mapping between some state, phenomenon, event, or entity and data.
+https://doi.org/10.1002/asi.20652</rdfs:comment>
     </owl:Class>
     
 
@@ -2115,6 +2159,7 @@ Not clear how this action is related to DQA? Is this about communicating about A
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+        <rdfs:comment>This class is used to describe Metrics that operationalize Dimensions for use in data Evaluation Activities.</rdfs:comment>
     </owl:Class>
     
 
@@ -2258,6 +2303,7 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:Class rdf:about="https://www.w3.org/TR/prov-o/#Organization">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Group"/>
+        <rdfs:comment>Used the Agent type - Organization</rdfs:comment>
     </owl:Class>
     
 
@@ -2266,6 +2312,7 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:Class rdf:about="https://www.w3.org/TR/prov-o/#Person">
         <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Agent"/>
+        <rdfs:comment>Used to describe the Agent type Person.</rdfs:comment>
     </owl:Class>
     
 
@@ -2294,7 +2341,7 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Accuracy">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
-        <rdfs:comment>The degree to which data is a correct or valid representation of an object, relation, process, or event.</rdfs:comment>
+        <rdfs:comment>The degree to which data is a correct or valid representation of an object, phenomenon, relation, process, or event.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2312,7 +2359,6 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Completeness">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
-        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment>The extent to which data is a complete representation of another object, relation, process, or event.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -2322,7 +2368,6 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Consistency">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
-        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment>The extent of consistency in using the same values or structure for representing an object, relation, process, or event.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -2341,7 +2386,8 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Currency">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
-        <rdfs:comment>The age of data.</rdfs:comment>
+        <rdfs:comment>The age of data;
+The extent to which the age of data meets the requirements of its usage context.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2369,7 +2415,6 @@ The extent to which a data product preserves people’s privacy and does not dis
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Interoperability">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
-        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment>The extent of a data product being interoperable and usable in another system;
 The degree to which a data product has attributes that enable it to be installed, replaced, or moved from one system to another, preserving the existing quality in a specific context of use.</rdfs:comment>
     </owl:NamedIndividual>
