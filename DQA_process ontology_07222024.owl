@@ -819,7 +819,10 @@ Person who assist the organization on quality management system realization, giv
     <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#DivisionOfLabor">
         <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
         <rdfs:comment>Group (Organization and Community) mediates DQA Actvitity through Division Of Labor.
-Division of Labor defines Activity specific allocation of Roles.</rdfs:comment>
+Division of Labor defines Activity specific allocation of Roles based on the Activity&apos;s set of Actions. 
+
+Scenario  – Division of labor
+In order to model the workflow and division of labor of the DQA process, John consults the ontology to identify the actions and roles involved in DQA. By utilizing the ontology, John is also able to determine who in the library’s organizational structure could be involved in the DQA process and their specific roles.</rdfs:comment>
     </owl:Class>
     
 
@@ -1161,7 +1164,10 @@ Person or organizaiton that could or does receive a product or a service that is
 
     <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#QualityModel">
         <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Quality_Objective"/>
-        <rdfs:comment>The set of attributes that are used to define a Quality Objective.</rdfs:comment>
+        <rdfs:comment>The set of attributes that are used to define a Quality Objective.
+
+Scenario
+John is a new data curator at University X&apos;s Research Data Repository (RDR). His task is to create a Data Quality Assurance (DQA) process that aligns with the NSTC guidelines for desirable characteristics of data repositories. To begin conceptualizing the DQA process, John consults the Ontology to obtain a general model of the concept of data quality as a set of dimensions.  This helps him draft an initial objective of the DQA process, which is to achieve high data quality. He then shares this objective with RDR stakeholders to initiate discussions on defining data quality within their specific context.</rdfs:comment>
     </owl:Class>
     
 
@@ -2341,7 +2347,25 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Accuracy">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
-        <rdfs:comment>The degree to which data is a correct or valid representation of an object, phenomenon, relation, process, or event.</rdfs:comment>
+        <rdfs:comment>The degree to which data is a correct or valid representation of an object, phenomenon, relation, process, or event.
+
+Accuracy Scenario: Inaccurate data
+Scenario: 
+Alex a research scientist recently deposited his data. The data curation team at RDR Y after analyzing it found that the dataset&apos;s description in its ReadMe file doesn’t match what was submitted. This might be because the submitted version of the dataset was stale and not updated with any of the last-minute changes that Alex made in the data. 
+
+Solution Scenario 1: Alex could use a version control tool to perform a last-minute check to verify if the most recent data was submitted to the RDR.  
+
+Pros: Reduces human errors and also helps reduce confusion by automating a key manual task.
+Cons: This could lead to confusion if there were too many versions with similar names
+
+===================
+Inaccurate version of the script used run the data leads to an accuracy problem in the associated data product. 
+
+Scenario: Prof. Bret’s research team was using a script to run on their data. They were using a version control system like GitHub, and they had two threads in their Master repository; one was named “Main”, while the other was “Final”. Someone from the research team submitted the Final thread code of the script along with the data. When curators at RDR Y tried to run the code it did not work as expected. So they asked the team to look into it and initially, even they didn’t understand what was going on, but later figured out that they gave the wrong code as few people in the team thought “Main” was the actual code, while few thought “Final” was the actual code, mixing everything up.
+
+Solution Scenario 2: Version control systems are made to make collaboration easier, however, improper naming conventions like “Main” and “Final” or “Actual Main” could easily confuse people. Prof. Bret after learning of this issue removed the redundant threads and made sure that proper naming conventions were followed from then on. He explained to the team what standard naming conventions they were to follow and made sure everyone understood them well.
+Pros: By following good naming conventions, people can prevent many confusions and misunderstandings. 
+Cons: This increases the need to think of good names for each thread, using standard conventions followed across the industry could help save some time.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2359,7 +2383,11 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Completeness">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
-        <rdfs:comment>The extent to which data is a complete representation of another object, relation, process, or event.</rdfs:comment>
+        <rdfs:comment>The extent to which data is a complete representation of another object, relation, process, or event.
+
+========================
+Metadata is incomplete. 
+Scenario: Sam, a data curator working for RDR Y, once received a dataset that came along with metadata and a code. However, metadata is very sparse and incomplete, making it very difficult for him to understand the data and the code and the relationship between the two. So, he asked the research team to revise and expand the metadata, including the readme files for the data and the code.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2368,7 +2396,11 @@ An agent is something that bears some form of responsibility for an activity tak
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Consistency">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#IntrinsicDimension"/>
-        <rdfs:comment>The extent of consistency in using the same values or structure for representing an object, relation, process, or event.</rdfs:comment>
+        <rdfs:comment>The extent of consistency in using the same values or structure for representing an object, relation, process, or event.
+
+=======
+Consistency Scenario: Inconsistent names used for the same fields
+Scenario 17: Henry a data curator at RDR Y, once had a dataset deposited that comprised multiple data files. Although the files were related, they used different naming conventions for their variables. In some files, gender data was under the header Gender, while in some places, it was under Sex. Similarly, with names, in some places, it was First name and Last name, while in some, it was First name and Surname. Henry talked to the research team and told them about the inconsistent naming conventions used across their datasets.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2479,7 +2511,18 @@ The degree to which a data product has attributes that enable it to be installed
 
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#Understanability">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
-        <rdfs:comment>The degree to which a data product has attributes that enable it to be read and interpreted by users.</rdfs:comment>
+        <rdfs:comment>The degree to which a data product has attributes that enable it to be read and interpreted by users.
+
+Scenario
+Oscar a junior data curator at RDR Y, recently received a dataset from Dr. Bert, this was highly complex data that had too many technical words, so Oscar had to frequently refer to the documentation and the metadata to understand the data. However, he noticed that some of the words mentioned in the documentation were equally difficult to understand since Oscar didn’t have any technical background in that particular field. Confused he asked his senior curators to help them out, but from a few particular words, codes, and formulas he had to contact Dr. Bert for guidance.
+
+Solution scenari:
+ It is important that researchers realize that technical jargon can be difficult for a lot of people to understand. Hence, when trying to write documentation about technical data it is important to use layman’s terms and give high-level explanations so that everyone is able to understand them.
+Pros: This can dramatically increase the ease with which other people understand research data, while also reducing the need for rework.
+Cons: By over-simplifying the documentation, the researcher might leave out a lot of crucial information that might reduce the important factor of the data among professionals in that field.
+
+Solution scenario for the con
+In such a case it is fruitful to develop two kinds of documentation, one explained in layman’s terms while the other explained using the technical words, in full depth and complexity appreciated by professionals of the field.</rdfs:comment>
     </owl:NamedIndividual>
 </rdf:RDF>
 
