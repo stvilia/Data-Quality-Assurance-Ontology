@@ -17,4 +17,4 @@ Refer to the `/docs/usage.md` file for detailed instructions on using the DQA mo
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Contact
-For questions, suggestions, or issues, please contact us via [email] or open an issue on this repository.
+For questions, suggestions, or issues, please contact us via [email](mailto:stvilia@gmail.com) or open an issue on this repository.
