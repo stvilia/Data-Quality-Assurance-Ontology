@@ -2429,7 +2429,13 @@ The extent to which the age of data meets the requirements of its usage context.
     <owl:NamedIndividual rdf:about="http://local.tamu.edu/djlee/ns/dqa#EthicalCompliance">
         <rdf:type rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProductDimension"/>
         <rdfs:comment>The extent to which a data product complies with the ethical principles of a particular community or culture; 
-The extent to which a data product preserves people’s privacy and does not disclose confidential information.</rdfs:comment>
+The extent to which a data product preserves people’s privacy and does not disclose confidential information.
+
+
+==========
+Privacy scenario: Confidential/sensitive informaton included  in research data
+
+Scenario: Oscar, a curator at RDR Y, got a dataset from Dr. Alex, a sociology researcher, that was populated using data derived from many social media platforms. This dataset contained some sensitive data like the neighborhoods where the users stay, and a few other details that could be direct identifiers. This is a privacy issue, so he had to sit with the research team and make sure that data was anonymized accordingly.</rdfs:comment>
     </owl:NamedIndividual>
     
 
