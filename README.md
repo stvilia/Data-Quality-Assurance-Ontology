@@ -14,7 +14,7 @@ DQA is crucial for the effective sharing and reuse of research data. Despite the
 Refer to the `/docs/usage.md` file for detailed instructions on using the DQA model and ontology. The documentation includes examples and best practices for integrating the framework into existing RDR workflows.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+The ontology is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 ## Contact
 For questions, suggestions, or issues, please contact us via [email](mailto:stvilia@gmail.com) or open an issue on this repository.
