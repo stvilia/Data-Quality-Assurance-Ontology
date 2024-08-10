@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/DataQualityAssurance_Ontology"/>
     
 
 
@@ -924,7 +924,7 @@ In order to model the workflow and division of labor of the DQA process, John co
     <!-- http://local.tamu.edu/djlee/ns/dqa#EducationalProgram -->
 
     <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#EducationalProgram">
-        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#ProfessionalDevelopment"/>
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
         <rdfs:isDefinedBy>IQAF</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -1027,15 +1027,6 @@ In order to model the workflow and division of labor of the DQA process, John co
         <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#MetadataQuality"/>
         <rdfs:isDefinedBy>iso 8000</rdfs:isDefinedBy>
         <skos:definition>&lt;quality of product shape data&gt; result of inspection (.3..12.,_6_) to determine whether or not product data (3.5.3) contain data quality defects (3.12 .5)</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://local.tamu.edu/djlee/ns/dqa#Instrument -->
-
-    <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Instrument">
-        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
-        <rdfs:comment>How different is Instrument from Measuring Equipment</rdfs:comment>
     </owl:Class>
     
 
@@ -1221,7 +1212,7 @@ Action to eliminate the cause of a potential nonconformithy or other potential u
 
     <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#ProductDimension">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
-        <rdfs:comment>. DQAO’s product-level category, on the other hand, combines the reputational dimension with platform and organizational characteristics and requirements for a data product that makes it usable.</rdfs:comment>
+        <rdfs:comment>DQAO’s product-level categoryn combines the reputational dimension with platform and organizational characteristics and requirements for a data product that makes it usable.</rdfs:comment>
     </owl:Class>
     
 
@@ -1235,7 +1226,7 @@ Action to eliminate the cause of a potential nonconformithy or other potential u
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Group"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#Tool"/>
+        <rdfs:subClassOf rdf:resource="http://local.tamu.edu/djlee/ns/dqa#EducationalProgram"/>
         <rdfs:isDefinedBy>IQAF</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -1347,6 +1338,7 @@ John is a new data curator at University X&apos;s Research Data Repository (RDR)
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment>Identifies issues in Information Product&apos;s current quality relative to the required quality levels indicated in Quality Model Required..</rdfs:comment>
+        <rdfs:isDefinedBy>https://doi.org/10.1002/asi.20652</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1495,6 +1487,7 @@ A role is the function of an entity or agent with respect to an activity, in the
 
     <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#Tool">
         <rdfs:comment>This class describes Tools, including cognitive tools such as Methods, Metrics, Dimensions, Division of Labor, etc.</rdfs:comment>
+        <rdfs:isDefinedBy>activity theory</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1523,7 +1516,7 @@ A role is the function of an entity or agent with respect to an activity, in the
 
     <owl:Class rdf:about="http://local.tamu.edu/djlee/ns/dqa#prob_Activity_Contradiction">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
-        <rdfs:comment>Congradictions in and between activity components causing quality problems.</rdfs:comment>
+        <rdfs:comment>Contradictions in and between activity components causing quality problems.</rdfs:comment>
     </owl:Class>
     
 
@@ -1624,9 +1617,7 @@ https://doi.org/10.1002/asi.20652</skos:definition>
     <owl:Class rdf:about="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Ask_permission_to_intervene">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Action"/>
         <rdfs:comment>ISO9000 Permission
-Action of giving formal authority
-
-Not clear how this action is related to DQA? Is this about communicating about Accessibility?</rdfs:comment>
+Action of giving formal authority</rdfs:comment>
     </owl:Class>
     
 
@@ -1680,7 +1671,8 @@ Not clear how this action is related to DQA? Is this about communicating about A
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
-        <rdfs:comment>Activity used to assess the design and operationalization of the DQA Process itself.</rdfs:comment>
+        <rdfs:comment>Activity used to assess the design and implementation of the DQA process itself. This includes evaluating the design of DQA activities, as well as their technical and human infrastructure (e.g., the skills and training of DQA staff)</rdfs:comment>
+        <rdfs:isDefinedBy>https://doi.org/10.1002/asi.24948</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1695,7 +1687,8 @@ Not clear how this action is related to DQA? Is this about communicating about A
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
-        <rdfs:comment>Activity is used describe interventions in the DQA Process itself.</rdfs:comment>
+        <rdfs:comment>Activity is used describe interventions in the DQA Process itself to improve the design of DQA activities, the quality of DQA infrastructure, or the DQA skills and training of staff</rdfs:comment>
+        <rdfs:isDefinedBy>https://doi.org/10.1002/asi.24948</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1823,7 +1816,7 @@ https://doi.org/10.1002/asi.20652</rdfs:comment>
         <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
         <rdfs:comment>Evaluation activity includes quality conceptualization and measurement. 
 Evaluation is performed by some Agent. 
-Its Objective is to evaluate an informaiton product&apos;s quality. 
+Its Objective is to evaluate an information product&apos;s quality. 
 Evaluation is comprised of Action. 
 It is mediated by Tool.</rdfs:comment>
     </owl:Class>
@@ -2235,6 +2228,7 @@ https://doi.org/10.1002/asi.2065</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
         <rdfs:comment>This class describes DQ problems caused by changes in the data itself.
 https://doi.org/10.1002/asi.20652 Stvilia&apos;s Information Quality Assessment Framework.</rdfs:comment>
+        <rdfs:isDefinedBy>https://doi.org/10.1002/asi.20652</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2262,6 +2256,7 @@ https://doi.org/10.1002/asi.20652 Stvilia&apos;s Information Quality Assessment 
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
         <rdfs:comment>This class represents a type of DQ problems that occur in a data product due to changes in its underlying entity(s).</rdfs:comment>
+        <rdfs:isDefinedBy>https://doi.org/10.1002/asi.20652</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2291,6 +2286,7 @@ https://doi.org/10.1002/asi.20652 Stvilia&apos;s Information Quality Assessment 
         <rdfs:comment>Any change in context, whether it be temporal or spatial, can change how DQ is
 understood and evaluated, and can lead to an DQ problem. An data product can be of good quality in its original context but can become of lower quality once it is moved to a different context.
 https://doi.org/10.1002/asi.20652</rdfs:comment>
+        <rdfs:isDefinedBy>https://doi.org/10.1002/asi.20652</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2325,6 +2321,7 @@ https://doi.org/10.1002/asi.20652</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/djlee/ontologies/2023/8/untitled-ontology-71#Problem_Source"/>
         <rdfs:comment>Mapping-related data quality problems arise when there is incomplete, ambiguous, inaccurate, inconsistent, or redundant mapping between some state, phenomenon, event, or entity and data.
 https://doi.org/10.1002/asi.20652</rdfs:comment>
+        <rdfs:isDefinedBy>https://doi.org/10.1002/asi.20652</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2348,7 +2345,7 @@ https://doi.org/10.1002/asi.20652</rdfs:comment>
         <rdfs:comment>DDI; Dcube; DUV:Motivation; OA:Motivation</rdfs:comment>
         <rdfs:isDefinedBy>OED</rdfs:isDefinedBy>
         <rdfs:seeAlso>DDI:QualityScheme</rdfs:seeAlso>
-        <skos:definition>Measurable or spatial extent of any kind, as length, breadth, thickness, area, volume; measurement, measure, magnitude, size.</skos:definition>
+        <skos:definition>Measurable or spatial extent of any kind</skos:definition>
     </owl:Class>
     
 
@@ -2740,5 +2737,5 @@ In such a case it is fruitful to develop two kinds of documentation, one explain
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
