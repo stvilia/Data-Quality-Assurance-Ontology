@@ -13,6 +13,24 @@ DQA is crucial for the effective sharing and reuse of research data. Despite the
 ## Usage
 Refer to the `/docs/usage.md` file for detailed instructions on using the DQA model and ontology. The documentation includes examples and best practices for integrating the framework into existing RDR workflows.
 
+## Project Contributors
+
+- **Dong Joon Lee**  
+  Department of Information and Operations Management, Texas A&M University  
+  ORCID: [0000-0001-8994-163X](https://orcid.org/0000-0001-8994-163X)
+
+- **Besiki Stvilia**  
+  School of Information, Florida State University  
+  ORCID: [0000-0002-2428-6627](https://orcid.org/0000-0002-2428-6627)
+
+- **Fatih Gunaydin**  
+  School of Information, Florida State University  
+  ORCID: [0000-0002-1956-7109](https://orcid.org/0000-0002-1956-7109)
+
+- **Yuanying Pang**  
+  School of Information, Florida State University  
+  ORCID: [0009-0008-4262-1186](https://orcid.org/0009-0008-4262-1186)
+
 ## License
 The ontology is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
