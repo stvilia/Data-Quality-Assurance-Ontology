@@ -99,9 +99,6 @@
         <Class abbreviatedIRI="dqa:Manager"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dqa:MeasuringEquipment"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="dqa:Metadata"/>
     </Declaration>
     <Declaration>
@@ -1518,10 +1515,6 @@
         <Class abbreviatedIRI="dqa:Curator"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dqa:MeasuringEquipment"/>
-        <Class abbreviatedIRI="dqa:Tool"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="dqa:Metadata"/>
         <Class abbreviatedIRI="dqa:InformationProduct"/>
     </SubClassOf>
@@ -2623,16 +2616,6 @@ Person or group of people who directs and controls DQA tasks at higher level
 
 ISO9000
 Person or group of people who directs and controls an organization at the highest level</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>dqa:MeasuringEquipment</AbbreviatedIRI>
-        <Literal>ISO 9000</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <AbbreviatedIRI>dqa:MeasuringEquipment</AbbreviatedIRI>
-        <Literal>measuring instrument, software, measurement standard, reference material or auxiliary apparatus or combination thereof necessary to realize a measurement process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
