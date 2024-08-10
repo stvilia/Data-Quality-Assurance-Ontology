@@ -1,4 +1,4 @@
-# Data Quality Assurance (DQA) in Research Data Repositories (RDRs)
+# Data Quality Assurance (DQA) Ontology for Research Data Repositories (RDRs)
 
 ## Overview
 Welcome to the GitHub repository for our project on Data Quality Assurance (DQA) in Research Data Repositories (RDRs). This project focuses on developing a theoretical model and an RDF/OWL ontology for DQA in RDRs.
