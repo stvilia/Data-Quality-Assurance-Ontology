@@ -11,7 +11,14 @@ DQA is crucial for the effective sharing and reuse of research data. Despite the
 - **Ontology Development**: A machine-processable information artifact ontology containing detailed classifications and properties to guide DQA work.
 
 ## Usage
-Refer to the `/docs/usage.md` file for detailed instructions on using the DQA model and ontology. The documentation includes examples and best practices for integrating the framework into existing RDR workflows.
+Please refer to our companion paper for detailed guidance on the ontology:
+
+Lee, D.J., Stvilia, B., Gunaydin, F., & Pang, Y. (in press, 2024). Developing a data quality assurance ontology for research data repositories. Journal of Documentation. https://doi.org/10.1108/JD-09-2024-0212.
+or directly download the preprint version here:
+https://myweb.fsu.edu/bstvilia/papers/paper_ontology_preprint.pdf.
+
+The paper provides a comprehensive explanation of the data quality assurance ontology, including its development process, potential applicatons, and integration strategies with research data repositories.
+
 
 ## Project Contributors
 
