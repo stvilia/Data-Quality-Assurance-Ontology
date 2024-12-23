@@ -1,0 +1,3604 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/djlee/ontologies/2023/8/DataQualityAssurance_Ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/djlee/ontologies/2023/8/DataQualityAssurance_Ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/djlee/ontologies/2023/8/DataQualityAssurance_Ontology"/>
+    <Prefix name="dqa" IRI="http://local.tamu.edu/djlee/ns/dqa#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Add"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:ApprovalReview"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:CharacteristicData"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Communication"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Community"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Complaint"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:ComplianceStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:ConformanceResult"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Correction"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:CorrectiveAction"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Curator"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:CustomerSatisfaction"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Data"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:DataAccuracyRecord"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:DataCompletenessRecord"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:DataQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Delete"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Description"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Disclaimer"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Dispute"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:DivisionOfLabor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:EducationalProgram"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Insert"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:InspectionResult"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:IntrinsicDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Metadata"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:MetadataQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Mission"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:PreventiveAction"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:ProcessMetadata"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:ProductDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:ProfessionalDevelopment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:ProvenanceMetadata"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Provider"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:QualityModel"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:QualityScheme"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:QualityStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Quality_Model_Active"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Quality_Model_Required"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Quality_Objective"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Quality_Problem"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:QuantitativeResult"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:ReferenceMetadata"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:ReferenceSource"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Repair"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Replace"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Role"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Scope"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Software"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Standard"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Strategy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:StructuralMetadata"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Tool"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:User"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:Vision"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:prob_Activity_Contradiction"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:prob_Activity_Contradiction_Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dqa:prob_Activity_Contradiction_Tools"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/spar/datacite/AgentIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/spar/datacite/Identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/spar/datacite/ResourceIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activity_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Approve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ask_permission_to_intervene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Competency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confirm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DQA_Evaluation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DQA_Intervention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DQA_Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DQA_Process_Improvement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decontextualizing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Define"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evaluation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FullInspection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndirectEvaluation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Objective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Problem_Source"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Provenance_Dependent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quality_Measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Release"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Representation_Dependent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Review"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Revision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SampleBasedInspection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scrap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Share"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stability_Dependent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Update"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#prob_Changes_In_Data_Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#prob_Changes_In_Underlying_Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#prob_Context_Change"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#prob_Mapping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/dqv#Dimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/dqv#Metric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityCertificate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityPolicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/dqv#UserQualityFeedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dqa:collects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dqa:contributes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dqa:creates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dqa:hasQualityActiveModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dqa:hasQualityProblem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dqa:hasQualityRequiredModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dqa:hasSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dqa:identifierdBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dqa:involvedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dqa:isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dqa:requiresExpertise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dqa:verifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affectsActivities"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affectsDimensions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#composedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#comprisedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#curates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#evaluateDQA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#interveneInDQA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesCommunication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesEvaluation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesIntervention"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDescribedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMeasuredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMediatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPerformedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mediates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#playRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#provides"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#targets"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isAttributedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isDerivedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isGeneratedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/dqv#isMeasurementOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/oa#motivatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#actedOnBehalfOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#allocatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#hasPrimarySource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#isAssociatedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#used"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.w3.org/TR/vocab-duv/#hasDistributor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.w3.org/TR/vocab-duv/#hasFeedback"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.w3.org/TR/vocab-duv/#refersTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="dqa:qualityMeasurementValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="dqa:qualityMeasurementValueRequired"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#availableFunding"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#criticalityValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#currentQuality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#priority"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:Accessability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:Accuracy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:Actionability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:Completeness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:Consistency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:Credibility"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:Currency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:EthicalCompliance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:Integrity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:Interoperability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:LegalCompliance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:Precision"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:Recoverability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:Security"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:Simplicity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:Traceability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dqa:Understandability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Availability"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Add"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#targets"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Communication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="dqa:involvedIn"/>
+            <Class abbreviatedIRI="dqa:Intervention"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Communication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="dqa:involvedIn"/>
+            <Class IRI="#Evaluation"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Communication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Ask"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Communication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Ask_permission_to_intervene"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Communication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Comment"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Communication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Confirm"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Communication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Inform"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Communication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Interact"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Communication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Release"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Communication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Share"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Communication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/ns/oa#motivatedBy"/>
+            <Class abbreviatedIRI="dqa:Quality_Objective"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Correction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#targets"/>
+            <Class IRI="#Creation"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:CorrectiveAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#targets"/>
+            <Class IRI="#Creation"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Curator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#curates"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Curator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#actedOnBehalfOf"/>
+            <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Data"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#comprisedOf"/>
+            <Class IRI="#Measurement"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Data"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDescribedBy"/>
+            <Class abbreviatedIRI="dqa:Metadata"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Delete"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#targets"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="dqa:hasQualityActiveModel"/>
+            <Class abbreviatedIRI="dqa:Quality_Model_Active"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="dqa:hasQualityProblem"/>
+            <Class abbreviatedIRI="dqa:Quality_Problem"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="dqa:hasQualityRequiredModel"/>
+            <Class abbreviatedIRI="dqa:Quality_Model_Required"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="dqa:requiresExpertise"/>
+            <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isAttributedTo"/>
+            <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isAttributedTo"/>
+            <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isDerivedFrom"/>
+            <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isDerivedFrom"/>
+            <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isGeneratedBy"/>
+            <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isGeneratedBy"/>
+            <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.w3.org/TR/vocab-duv/#hasDistributor"/>
+            <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Insert"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#targets"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class abbreviatedIRI="dqa:Add"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class abbreviatedIRI="dqa:Correction"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class abbreviatedIRI="dqa:CorrectiveAction"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class abbreviatedIRI="dqa:Delete"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class abbreviatedIRI="dqa:Insert"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class abbreviatedIRI="dqa:PreventiveAction"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class abbreviatedIRI="dqa:Repair"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class abbreviatedIRI="dqa:Replace"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Revision"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Rework"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Scrap"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Update"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/ns/oa#motivatedBy"/>
+            <Class abbreviatedIRI="dqa:Quality_Objective"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:PreventiveAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#targets"/>
+            <Class IRI="#Creation"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:ProfessionalDevelopment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#isAssociatedWith"/>
+            <Class IRI="#Group"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Provider"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#provides"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Quality_Model_Active"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="dqa:verifies"/>
+            <Class abbreviatedIRI="dqa:Quality_Model_Required"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Quality_Problem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="dqa:hasSource"/>
+            <Class IRI="#Problem_Source"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Quality_Problem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="dqa:identifierdBy"/>
+            <Class abbreviatedIRI="dqa:Quality_Model_Active"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:ReferenceSource"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#targets"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Repair"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#targets"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Replace"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#targets"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dqa:Role"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#allocatedBy"/>
+            <Class abbreviatedIRI="dqa:DivisionOfLabor"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Action"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Action"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Competency"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#comprisedOf"/>
+            <Class IRI="#Knowledge"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Competency"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#comprisedOf"/>
+            <Class IRI="#Skill"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DQA_Evaluation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/ns/oa#motivatedBy"/>
+            <Class abbreviatedIRI="dqa:Quality_Objective"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DQA_Intervention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/ns/oa#motivatedBy"/>
+            <Class abbreviatedIRI="dqa:Quality_Objective"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DQA_Process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesCommunication"/>
+            <Class abbreviatedIRI="dqa:Communication"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DQA_Process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesEvaluation"/>
+            <Class IRI="#Evaluation"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DQA_Process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesIntervention"/>
+            <Class abbreviatedIRI="dqa:Intervention"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DQA_Process_Improvement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#evaluateDQA"/>
+            <Class IRI="#DQA_Evaluation"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DQA_Process_Improvement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#interveneInDQA"/>
+            <Class IRI="#DQA_Intervention"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Evaluation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Approve"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Evaluation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Assign"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Evaluation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Define"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Evaluation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Measure"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Evaluation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Observe"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Evaluation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Organize"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Evaluation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Plan"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Evaluation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/ns/oa#motivatedBy"/>
+            <Class abbreviatedIRI="dqa:Quality_Objective"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FullInspection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usedIn"/>
+            <Class IRI="#Evaluation"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Group"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mediates"/>
+            <Class abbreviatedIRI="dqa:DivisionOfLabor"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Group"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mediates"/>
+            <Class abbreviatedIRI="dqa:ReferenceSource"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#IndirectEvaluation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usedIn"/>
+            <Class IRI="#Evaluation"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Monitor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usedIn"/>
+            <Class IRI="#Evaluation"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Quality_Measurement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/ns/dqv#isMeasurementOf"/>
+            <Class IRI="http://www.w3.org/ns/dqv#Metric"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Rate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usedIn"/>
+            <Class IRI="#Evaluation"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Review"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usedIn"/>
+            <Class IRI="#Evaluation"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Revision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#targets"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Rework"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#targets"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SampleBasedInspection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usedIn"/>
+            <Class IRI="#Evaluation"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Scrap"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#targets"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Test"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usedIn"/>
+            <Class IRI="#Evaluation"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Update"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#targets"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#prob_Changes_In_Data_Entity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affectsActivities"/>
+            <Class IRI="#Provenance_Dependent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#prob_Changes_In_Data_Entity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affectsActivities"/>
+            <Class IRI="#Stability_Dependent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#prob_Changes_In_Data_Entity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affectsDimensions"/>
+            <Class abbreviatedIRI="dqa:IntrinsicDimension"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#prob_Changes_In_Data_Entity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affectsDimensions"/>
+            <Class abbreviatedIRI="dqa:ProductDimension"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#prob_Changes_In_Underlying_Entity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affectsActivities"/>
+            <Class IRI="#Provenance_Dependent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#prob_Changes_In_Underlying_Entity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affectsActivities"/>
+            <Class IRI="#Stability_Dependent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#prob_Changes_In_Underlying_Entity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affectsDimensions"/>
+            <Class abbreviatedIRI="dqa:ProductDimension"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#prob_Context_Change"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affectsActivities"/>
+            <Class IRI="#Decontextualizing"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#prob_Context_Change"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affectsActivities"/>
+            <Class IRI="#Provenance_Dependent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#prob_Context_Change"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affectsDimensions"/>
+            <Class abbreviatedIRI="dqa:ProductDimension"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#prob_Mapping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affectsActivities"/>
+            <Class IRI="#Provenance_Dependent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#prob_Mapping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affectsActivities"/>
+            <Class IRI="#Representation_Dependent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#prob_Mapping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affectsDimensions"/>
+            <Class abbreviatedIRI="dqa:IntrinsicDimension"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#prob_Mapping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affectsDimensions"/>
+            <Class abbreviatedIRI="dqa:ProductDimension"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/ns/dqv#Dimension"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="dqa:isPartOf"/>
+            <Class abbreviatedIRI="dqa:QualityModel"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/ns/dqv#Dimension"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isMeasuredBy"/>
+            <Class IRI="http://www.w3.org/ns/dqv#Metric"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/ns/dqv#Metric"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.w3.org/TR/vocab-duv/#refersTo"/>
+            <Class abbreviatedIRI="dqa:ReferenceSource"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#comprisedOf"/>
+            <Class IRI="#Quality_Measurement"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Action"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isMediatedBy"/>
+            <Class abbreviatedIRI="dqa:Tool"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isMediatedBy"/>
+            <Class IRI="#Group"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPerformedBy"/>
+            <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/ns/oa#motivatedBy"/>
+            <Class IRI="#Objective"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="dqa:collects"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="dqa:contributes"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="dqa:creates"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mediates"/>
+            <Class abbreviatedIRI="dqa:Tool"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#playRole"/>
+            <Class abbreviatedIRI="dqa:Role"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#hasPrimarySource"/>
+            <Class abbreviatedIRI="dqa:Metadata"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#hasPrimarySource"/>
+            <Class abbreviatedIRI="dqa:ReferenceSource"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#used"/>
+            <Class abbreviatedIRI="dqa:InformationProduct"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.w3.org/TR/vocab-duv/#hasFeedback"/>
+            <Class IRI="http://www.w3.org/ns/dqv#UserQualityFeedback"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Add"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:ApprovalReview"/>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityCertificate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:CharacteristicData"/>
+        <Class abbreviatedIRI="dqa:QualityStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Communication"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Community"/>
+        <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Complaint"/>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:ComplianceStatement"/>
+        <Class abbreviatedIRI="dqa:ReferenceSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:ConformanceResult"/>
+        <Class abbreviatedIRI="dqa:DataQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:ConformanceResult"/>
+        <Class abbreviatedIRI="dqa:MetadataQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Correction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:CorrectiveAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Curator"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:CustomerSatisfaction"/>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Data"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:DataAccuracyRecord"/>
+        <Class abbreviatedIRI="dqa:DataQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:DataCompletenessRecord"/>
+        <Class abbreviatedIRI="dqa:DataQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:DataQuality"/>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Delete"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Description"/>
+        <Class abbreviatedIRI="dqa:QualityStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Disclaimer"/>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Dispute"/>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:DivisionOfLabor"/>
+        <Class abbreviatedIRI="dqa:Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:EducationalProgram"/>
+        <Class abbreviatedIRI="dqa:Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Insert"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:InspectionResult"/>
+        <Class abbreviatedIRI="dqa:DataQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:InspectionResult"/>
+        <Class abbreviatedIRI="dqa:MetadataQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:IntrinsicDimension"/>
+        <Class IRI="http://www.w3.org/ns/dqv#Dimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Manager"/>
+        <Class abbreviatedIRI="dqa:Curator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Metadata"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:MetadataQuality"/>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Mission"/>
+        <Class abbreviatedIRI="dqa:ReferenceSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:PreventiveAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:ProcessMetadata"/>
+        <Class abbreviatedIRI="dqa:Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:ProductDimension"/>
+        <Class IRI="http://www.w3.org/ns/dqv#Dimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:ProfessionalDevelopment"/>
+        <Class abbreviatedIRI="dqa:EducationalProgram"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:ProvenanceMetadata"/>
+        <Class abbreviatedIRI="dqa:ProcessMetadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Provider"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:QualityModel"/>
+        <Class abbreviatedIRI="dqa:Quality_Objective"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:QualityScheme"/>
+        <Class abbreviatedIRI="dqa:ReferenceSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:QualityStatement"/>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Quality_Model_Active"/>
+        <Class abbreviatedIRI="dqa:QualityModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Quality_Model_Required"/>
+        <Class abbreviatedIRI="dqa:QualityModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Quality_Objective"/>
+        <Class IRI="#Objective"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:QuantitativeResult"/>
+        <Class abbreviatedIRI="dqa:DataQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:QuantitativeResult"/>
+        <Class abbreviatedIRI="dqa:MetadataQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:ReferenceMetadata"/>
+        <Class abbreviatedIRI="dqa:Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:ReferenceSource"/>
+        <Class abbreviatedIRI="dqa:Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Repair"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Replace"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Role"/>
+        <Class abbreviatedIRI="dqa:Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Scope"/>
+        <Class abbreviatedIRI="dqa:ReferenceSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Software"/>
+        <Class abbreviatedIRI="dqa:Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Standard"/>
+        <Class abbreviatedIRI="dqa:ReferenceSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Strategy"/>
+        <Class abbreviatedIRI="dqa:ReferenceSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:StructuralMetadata"/>
+        <Class abbreviatedIRI="dqa:Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:User"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:Vision"/>
+        <Class abbreviatedIRI="dqa:ReferenceSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:prob_Activity_Contradiction"/>
+        <Class IRI="#Problem_Source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:prob_Activity_Contradiction_Resource"/>
+        <Class abbreviatedIRI="dqa:prob_Activity_Contradiction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dqa:prob_Activity_Contradiction_Tools"/>
+        <Class abbreviatedIRI="dqa:prob_Activity_Contradiction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/spar/datacite/AgentIdentifier"/>
+        <Class IRI="http://purl.org/spar/datacite/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/spar/datacite/Identifier"/>
+        <Class abbreviatedIRI="dqa:Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/spar/datacite/ResourceIdentifier"/>
+        <Class IRI="http://purl.org/spar/datacite/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Approve"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ask"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ask_permission_to_intervene"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assign"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comment"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Competency"/>
+        <Class abbreviatedIRI="dqa:Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confirm"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creation"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DQA_Evaluation"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DQA_Intervention"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DQA_Process"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DQA_Process_Improvement"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decontextualizing"/>
+        <Class IRI="#Activity_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Define"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evaluation"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FullInspection"/>
+        <Class IRI="#Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndirectEvaluation"/>
+        <Class IRI="#Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inform"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interact"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knowledge"/>
+        <Class abbreviatedIRI="dqa:Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measure"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <Class IRI="#Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Method"/>
+        <Class abbreviatedIRI="dqa:Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monitor"/>
+        <Class IRI="#Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observe"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organize"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plan"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Provenance_Dependent"/>
+        <Class IRI="#Activity_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quality_Measurement"/>
+        <Class IRI="#Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rate"/>
+        <Class IRI="#Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Release"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Representation_Dependent"/>
+        <Class IRI="#Activity_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Review"/>
+        <Class IRI="#Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Revision"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rework"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SampleBasedInspection"/>
+        <Class IRI="#Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scrap"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Share"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skill"/>
+        <Class abbreviatedIRI="dqa:Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stability_Dependent"/>
+        <Class IRI="#Activity_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test"/>
+        <Class IRI="#Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Update"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#prob_Changes_In_Data_Entity"/>
+        <Class IRI="#Problem_Source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#prob_Changes_In_Underlying_Entity"/>
+        <Class IRI="#Problem_Source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#prob_Context_Change"/>
+        <Class IRI="#Problem_Source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#prob_Mapping"/>
+        <Class IRI="#Problem_Source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/dqv#Dimension"/>
+        <Class abbreviatedIRI="dqa:Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/dqv#Metric"/>
+        <Class abbreviatedIRI="dqa:Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+        <Class abbreviatedIRI="dqa:Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityCertificate"/>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityPolicy"/>
+        <Class abbreviatedIRI="dqa:ReferenceSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/dqv#UserQualityFeedback"/>
+        <Class IRI="http://www.w3.org/ns/dqv#QualityAnnotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Organization"/>
+        <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Person"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:ProductDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:Accessability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:IntrinsicDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:Accuracy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:ProductDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:Actionability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:IntrinsicDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:Completeness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:IntrinsicDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:Consistency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:ProductDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:Credibility"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:IntrinsicDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:Currency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:ProductDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:EthicalCompliance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:ProductDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:Integrity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:ProductDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:Interoperability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:ProductDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:LegalCompliance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:IntrinsicDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:Precision"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:ProductDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:Recoverability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:ProductDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:Security"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:IntrinsicDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:Simplicity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:ProductDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:Traceability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:ProductDimension"/>
+        <NamedIndividual abbreviatedIRI="dqa:Understandability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dqa:ProductDimension"/>
+        <NamedIndividual IRI="#Availability"/>
+    </ClassAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isAttributedTo"/>
+        <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isDerivedFrom"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isDerivedFrom"/>
+        <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isGeneratedBy"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#targets"/>
+        <ObjectProperty abbreviatedIRI="dqa:verifies"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dqa:collects"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dqa:contributes"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dqa:creates"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dqa:hasQualityActiveModel"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dqa:hasQualityProblem"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dqa:hasQualityRequiredModel"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dqa:hasSource"/>
+        <Class abbreviatedIRI="dqa:Quality_Problem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dqa:identifierdBy"/>
+        <Class abbreviatedIRI="dqa:Quality_Problem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dqa:involvedIn"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dqa:requiresExpertise"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dqa:verifies"/>
+        <Class abbreviatedIRI="dqa:Quality_Model_Active"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affectsActivities"/>
+        <Class IRI="#Problem_Source"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affectsDimensions"/>
+        <Class IRI="#Problem_Source"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#composedOf"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#curates"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#evaluateDQA"/>
+        <Class IRI="#DQA_Process_Improvement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#interveneInDQA"/>
+        <Class IRI="#DQA_Process_Improvement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesCommunication"/>
+        <Class IRI="#DQA_Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesEvaluation"/>
+        <Class IRI="#DQA_Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesIntervention"/>
+        <Class IRI="#DQA_Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDescribedBy"/>
+        <Class abbreviatedIRI="dqa:Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMeasuredBy"/>
+        <Class IRI="http://www.w3.org/ns/dqv#Dimension"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMediatedBy"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mediates"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#playRole"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#provides"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedIn"/>
+        <Class IRI="#Method"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isAttributedTo"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isDerivedFrom"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/TR/prov-o#isGeneratedBy"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/ns/dqv#isMeasurementOf"/>
+        <Class IRI="#Quality_Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/ns/oa#motivatedBy"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#actedOnBehalfOf"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#allocatedBy"/>
+        <Class abbreviatedIRI="dqa:Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#hasPrimarySource"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#isAssociatedWith"/>
+        <Class abbreviatedIRI="dqa:ProfessionalDevelopment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#used"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://www.w3.org/TR/vocab-duv/#hasDistributor"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://www.w3.org/TR/vocab-duv/#hasFeedback"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://www.w3.org/TR/vocab-duv/#refersTo"/>
+        <Class IRI="http://www.w3.org/ns/dqv#Metric"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dqa:collects"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dqa:contributes"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dqa:creates"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dqa:hasQualityActiveModel"/>
+        <Class abbreviatedIRI="dqa:Quality_Model_Active"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dqa:hasQualityProblem"/>
+        <Class abbreviatedIRI="dqa:Quality_Problem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dqa:hasQualityRequiredModel"/>
+        <Class abbreviatedIRI="dqa:Quality_Model_Required"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dqa:hasSource"/>
+        <Class IRI="#Problem_Source"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dqa:identifierdBy"/>
+        <Class abbreviatedIRI="dqa:Quality_Model_Active"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dqa:involvedIn"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dqa:requiresExpertise"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dqa:verifies"/>
+        <Class abbreviatedIRI="dqa:Quality_Model_Required"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affectsActivities"/>
+        <Class IRI="#Activity_Type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affectsDimensions"/>
+        <Class IRI="http://www.w3.org/ns/dqv#Dimension"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#composedOf"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#curates"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#evaluateDQA"/>
+        <Class IRI="#DQA_Evaluation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#interveneInDQA"/>
+        <Class IRI="#DQA_Intervention"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesCommunication"/>
+        <Class abbreviatedIRI="dqa:Communication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesEvaluation"/>
+        <Class IRI="#Evaluation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesIntervention"/>
+        <Class abbreviatedIRI="dqa:Intervention"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDescribedBy"/>
+        <Class abbreviatedIRI="dqa:Metadata"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMeasuredBy"/>
+        <Class IRI="http://www.w3.org/ns/dqv#Metric"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#playRole"/>
+        <Class abbreviatedIRI="dqa:Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#provides"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedIn"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/ns/dqv#isMeasurementOf"/>
+        <Class IRI="http://www.w3.org/ns/dqv#Metric"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/ns/oa#motivatedBy"/>
+        <Class IRI="#Objective"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#actedOnBehalfOf"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#allocatedBy"/>
+        <Class abbreviatedIRI="dqa:DivisionOfLabor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#isAssociatedWith"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://www.w3.org/TR/prov-o/#used"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://www.w3.org/TR/vocab-duv/#hasDistributor"/>
+        <Class IRI="https://www.w3.org/TR/prov-o/#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://www.w3.org/TR/vocab-duv/#hasFeedback"/>
+        <Class IRI="http://www.w3.org/ns/dqv#UserQualityFeedback"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://www.w3.org/TR/vocab-duv/#refersTo"/>
+        <Class abbreviatedIRI="dqa:ReferenceSource"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="dqa:qualityMeasurementValue"/>
+        <Class IRI="#Quality_Measurement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="dqa:qualityMeasurementValueRequired"/>
+        <Class IRI="#Quality_Measurement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#availableFunding"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cost"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#criticalityValue"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#currentQuality"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#priority"/>
+        <Class abbreviatedIRI="dqa:InformationProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dqa:qualityMeasurementValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dqa:qualityMeasurementValueRequired"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#availableFunding"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cost"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#criticalityValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#currentQuality"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#priority"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Accessability</AbbreviatedIRI>
+        <Literal>The extent to which a data product can be accessed within a specific context of use, especially by individuals who require assistive technology or customized settings due to disabilities; (Source: ISO 25012)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Accuracy</AbbreviatedIRI>
+        <Literal>The degree to which data has attributes that correctly represent the true value of the intendded attribute of a concept or event in a specific context of use. (Source: ISO 25012)
+
+Accuracy Scenario: Inaccurate data
+Scenario: 
+Alex a research scientist recently deposited his data. The data curation team at RDR Y after analyzing it found that the dataset&apos;s description in its ReadMe file doesn’t match what was submitted. This might be because the submitted version of the dataset was stale and not updated with any of the last-minute changes that Alex made in the data. 
+
+Solution Scenario 1: Alex could use a version control tool to perform a last-minute check to verify if the most recent data was submitted to the RDR.  
+
+Pros: Reduces human errors and also helps reduce confusion by automating a key manual task.
+Cons: This could lead to confusion if there were too many versions with similar names
+
+===================
+Inaccurate version of the script used run the data leads to an accuracy problem in the associated data product. 
+
+Scenario: Prof. Bret’s research team was using a script to run on their data. They were using a version control system like GitHub, and they had two threads in their Master repository; one was named “Main”, while the other was “Final”. Someone from the research team submitted the Final thread code of the script along with the data. When curators at RDR Y tried to run the code it did not work as expected. So they asked the team to look into it and initially, even they didn’t understand what was going on, but later figured out that they gave the wrong code as few people in the team thought “Main” was the actual code, while few thought “Final” was the actual code, mixing everything up.
+
+Solution Scenario 2: Version control systems are made to make collaboration easier, however, improper naming conventions like “Main” and “Final” or “Actual Main” could easily confuse people. Prof. Bret after learning of this issue removed the redundant threads and made sure that proper naming conventions were followed from then on. He explained to the team what standard naming conventions they were to follow and made sure everyone understood them well.
+Pros: By following good naming conventions, people can prevent many confusions and misunderstandings. 
+Cons: This increases the need to think of good names for each thread, using standard conventions followed across the industry could help save some time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Actionability</AbbreviatedIRI>
+        <Literal>The ability of the identifier system to locate a data product using a unique and actionable identifier. (Source: ISO 8000)
+
+Source: Lee, D. J., &amp; Stvilia, B. (2014). Developing a Data Identifier Taxonomy. Cataloging and Classification Quarterly. 52, 303-336.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Add</AbbreviatedIRI>
+        <Literal>The act of editing by adding an object to a collection.
+(Source: Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:ApprovalReview</AbbreviatedIRI>
+        <Literal>Provides information about the Approval Review undertaken in relation to the activity. Identifies the organization processing the review, the role of the approval review organization, case number, description, and related dates. Allows the inclusion of a reference to an external source detailing the approval review. (Source: DDI)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:CharacteristicData</AbbreviatedIRI>
+        <Literal>description of an entity by the class to which it belongs and a set of property values (Source: ISO 8000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Communication</AbbreviatedIRI>
+        <Literal>Communication class describes DQA communication activity. 
+Agent performs Communication activity to share information about and coordinate Evaluation and Intervention activities using communication Actions.
+
+Source: Stvilia, B., Pang, Y., Lee, D. J., &amp; Gunaydin, F. (in press, 2024). Data quality assurance practices in research data repositories - A systematic literature review. An Annual Review of Information Science and Technology (ARIST) paper. Journal of the Association for Information Science and Technology. https://doi.org/10.1002/asi.24948</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Community</AbbreviatedIRI>
+        <Literal>Used to describe the Agent type Community; A body of people or things viewed collectively. (Source: Oxford English Dictionary)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Complaint</AbbreviatedIRI>
+        <Literal>&lt;customer satisfaction&gt; expression of dissatisfaction made to an organization (3.2.1), related to its product (3.7.6) or service (3.7.7), or the complaints-handling process (3.4.1) itself, where a response or resolution is explicitly or implicitly expected (Source: ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Completeness</AbbreviatedIRI>
+        <Literal>The extent to which data is a complete representation of another object, relation, process, or event. (Source: ISO 19157, 25012)
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652
+========================
+Metadata is incomplete. 
+Scenario: Sam, a data curator working for RDR Y, once received a dataset that came along with metadata and a code. However, metadata is very sparse and incomplete, making it very difficult for him to understand the data and the code and the relationship between the two. So, he asked the research team to revise and expand the metadata, including the readme files for the data and the code.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dqa:ComplianceStatement</AbbreviatedIRI>
+        <Literal>Data Documentation Initiative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:ComplianceStatement</AbbreviatedIRI>
+        <Literal>Describe the measures taken to comply with the standards and/or specific levels of compliance by providing further details or a general description of compliance with the standard.(Source: DDI).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:ConformanceResult</AbbreviatedIRI>
+        <Literal>Results of conformance (fulfilment of specified requirements) (Source: ISO 19157)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Consistency</AbbreviatedIRI>
+        <Literal>The extent of consistency in using the same values or structure for representing an object, relation, process, or event. (Source: ISO 19157, 25012)
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652
+
+
+=======
+Consistency Scenario: Inconsistent names used for the same fields
+Scenario 17: Henry a data curator at RDR Y, once had a dataset deposited that comprised multiple data files. Although the files were related, they used different naming conventions for their variables. In some files, gender data was under the header Gender, while in some places, it was under Sex. Similarly, with names, in some places, it was First name and Last name, while in some, it was First name and Surname. Henry talked to the research team and told them about the inconsistent naming conventions used across their datasets.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Correction</AbbreviatedIRI>
+        <Literal>Equivalent to:
+DDI:ErrorCorrection
+EIA:ErrorCorrection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Correction</AbbreviatedIRI>
+        <Literal>Action to eliminate a detected nonconformity (Source: ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:CorrectiveAction</AbbreviatedIRI>
+        <Literal>Action to eliminate the cause of a nonconformity and to prevent recurrence (Source: ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Credibility</AbbreviatedIRI>
+        <Literal>The degree of reputation or credibility of a data product. (Source: ISO 19157, 25012)
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dqa:Curator</AbbreviatedIRI>
+        <Literal>DDI:Evaluator
+DDI:ReviewerRole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Curator</AbbreviatedIRI>
+        <Literal>Person who assist the organization on quality management system realization, giving advice or information (Source: ISO 9000).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Currency</AbbreviatedIRI>
+        <Literal>The age of data;
+The extent to which the age of data meets the requirements of its usage context. (Source: ISO 25012)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:CustomerSatisfaction</AbbreviatedIRI>
+        <Literal>customer&apos;s (3.2.4) perception of the degree to which the customer&apos;s expectations have been fulfilled (Source: ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Data</AbbreviatedIRI>
+        <Literal>Described the data part of the data product.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:DataAccuracyRecord</AbbreviatedIRI>
+        <Literal>record of the information (32.J.) provided about the data accuracy (.3...8.,1Q) of a specified data set (3.Z:4) (Source: ISO 8000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:DataCompletenessRecord</AbbreviatedIRI>
+        <Literal>record of the information (3.2.1) provided about the data completeness (3.8.12) of a specified data set (3.2.4) (Source: ISO 8000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:DataQuality</AbbreviatedIRI>
+        <Literal>degree to which a set of inherent characteristics of data fulfils requirements (Source: ISO 8000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Delete</AbbreviatedIRI>
+        <Literal>The act of editing a recipient by removing one of its objects.
+(Source: Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Description</AbbreviatedIRI>
+        <Literal>A description of the item.
+(Source: Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Disclaimer</AbbreviatedIRI>
+        <Literal>A disclaimer regarding the liability of the data producers or providers. Supports multiple language versions of the same content as well as optional formatting of the content. (Source:  DDI)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Dispute</AbbreviatedIRI>
+        <Literal>&lt;customer satisfaction&gt; disagreement, arising from a complaint (3.9.3), submitted to a DRP-provider (Source:  ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:DivisionOfLabor</AbbreviatedIRI>
+        <Literal>Group (Organization and Community) mediates DQA Actvitity through Division Of Labor.
+Division of Labor defines Activity specific allocation of Roles based on the Activity&apos;s set of Actions. 
+
+Scenario  – Division of labor
+In order to model the workflow and division of labor of the DQA process, John consults the ontology to identify the actions and roles involved in DQA. By utilizing the ontology, John is also able to determine who in the library’s organizational structure could be involved in the DQA process and their specific roles.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dqa:EducationalProgram</AbbreviatedIRI>
+        <Literal>Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:EthicalCompliance</AbbreviatedIRI>
+        <Literal>The extent to which a data product complies with the ethical principles of a particular community or culture; 
+The extent to which a data product preserves people’s privacy and does not disclose confidential information.
+(Source: ISO 25012)
+
+==========
+Privacy scenario: Confidential/sensitive informaton included  in research data
+
+Scenario: Oscar, a curator at RDR Y, got a dataset from Dr. Alex, a sociology researcher, that was populated using data derived from many social media platforms. This dataset contained some sensitive data like the neighborhoods where the users stay, and a few other details that could be direct identifiers. This is a privacy issue, so he had to sit with the research team and make sure that data was anonymized accordingly.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dqa:InformationProduct</AbbreviatedIRI>
+        <Literal>Main class for Information/Data Product.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Insert</AbbreviatedIRI>
+        <Literal>The act of adding at a specific location in an ordered collection.
+ (Source: Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:InspectionResult</AbbreviatedIRI>
+        <Literal>&lt;quality of product shape data&gt; result of inspection (.3..12.,_6_) to determine whether or not product data (3.5.3) contain data quality defects (3.12 .5) (Source: ISO 8000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Integrity</AbbreviatedIRI>
+        <Literal>The degree to which the integrity of a data product is preserved. (Source: ISO 8000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Interoperability</AbbreviatedIRI>
+        <Literal>The extent of a data product being interoperable and usable in another system; (Source: ISO 25012)
+
+The degree to which a data product has attributes that enable it to be installed, replaced, or moved from one system to another, preserving the existing quality in a specific context of use. (Source: ISO 25012)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Intervention</AbbreviatedIRI>
+        <Literal>Intervention class describes an intervention activity in the quality of a data product. 
+Intervention comprises intervention Actions. 
+Agent can enhance data product quality by intervining in its creation process and preventing data Quality Problems. 
+Agent can enhance data product quality by intervining in the data product itself, by scrapping or reworking the product.
+
+
+Source:  Stvilia, B., Pang, Y., Lee, D. J., &amp; Gunaydin, F. (in press, 2024). Data quality assurance practices in research data repositories - A systematic literature review. An Annual Review of Information Science and Technology (ARIST) paper. Journal of the Association for Information Science and Technology. https://doi.org/10.1002/asi.24948</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:IntrinsicDimension</AbbreviatedIRI>
+        <Literal>Intrinsic DQ can be assessed by measuring internal/intrinsic characteristics of data in relation to some general or context specific reference source (e.g., scientific reference databases and models,  standards or sources of a particular culture).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:LegalCompliance</AbbreviatedIRI>
+        <Literal>The extent to which a data product complies with the rules, laws, and regulations of a particular community or a particular country.(Source: ISO 25012, 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Manager</AbbreviatedIRI>
+        <Literal>Person or group of people who directs and controls DQA tasks at higher level (Source: Data Quality Vacabulary)
+
+Person or group of people who directs and controls an organization at the highest level (Source: ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Metadata</AbbreviatedIRI>
+        <Literal>Describes the metadata part of the data product.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:MetadataQuality</AbbreviatedIRI>
+        <Literal>An assessment of the quality of the metadata within the Maintainable object, (Source:  DDI)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Mission</AbbreviatedIRI>
+        <Literal>organization&apos;s purpose for existing as expressed by top management (Source: ISO 9000).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Precision</AbbreviatedIRI>
+        <Literal>The extent of precision/data of data in representing an object, relation, process, or event.(Source: ISO 25012)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:PreventiveAction</AbbreviatedIRI>
+        <Literal>Action to eliminate the cause of a potential nonconformithy or other potential undesirable situation (Source:  ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:ProcessMetadata</AbbreviatedIRI>
+        <Literal>Process metadata is used to describe the results of various operations in the data warehouse.(Source: Wikipedia)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:ProductDimension</AbbreviatedIRI>
+        <Literal>DQAO’s product-level categoryn combines the reputational dimension with platform and organizational characteristics and requirements for a data product that makes it usable.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dqa:ProfessionalDevelopment</AbbreviatedIRI>
+        <Literal>Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:ProvenanceMetadata</AbbreviatedIRI>
+        <Literal>Provenance Metadata is a record of the Activities involved in the creation and manipulation of a Data Product. (Source: PROV)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dqa:Provider</AbbreviatedIRI>
+        <Literal>Person or organizaiton that could or does receive a product or a service that is intended for or required by this person or organization (Source: ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:QualityModel</AbbreviatedIRI>
+        <Literal>The set of attributes that are used to define a Quality Objective.
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652
+
+Scenario
+John is a new data curator at University X&apos;s Research Data Repository (RDR). His task is to create a Data Quality Assurance (DQA) process that aligns with the NSTC guidelines for desirable characteristics of data repositories. To begin conceptualizing the DQA process, John consults the Ontology to obtain a general model of the concept of data quality as a set of dimensions.  This helps him draft an initial objective of the DQA process, which is to achieve high data quality. He then shares this objective with RDR stakeholders to initiate discussions on defining data quality within their specific context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dqa:QualityScheme</AbbreviatedIRI>
+        <Literal>Data Documentation Initiative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:QualityScheme</AbbreviatedIRI>
+        <Literal>This scheme contains a set of quality statements and quality standards referenced by the metadata at different points in the lifecycle. In addition to the name, label, and description of the scheme, the structure supports the inclusion of another QualityScheme by reference and a set of QualityStatement descriptions either in-line or by reference. (Source: DDI).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:QualityStatement</AbbreviatedIRI>
+        <Literal>A statement of quality which may be related to an external standard or contain a simple statement of internal quality goals or expectations. When relating to an external standard information on compliance may be added providing a reference to a ComplianceConcept, an ExternalComplianceCode, as well as a description. Optionally, a general statement of quality may be provided using OtherQualityStatement.(Source:  DDI)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Quality_Model_Active</AbbreviatedIRI>
+        <Literal>the set of criteria operationalized through specific metrics are that used to measure the quaity of a dataset
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Quality_Model_Required</AbbreviatedIRI>
+        <Literal>Defines specific levels of quality for the quality criteria of the active model that must be met to ensure the quality of a dataset.
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Quality_Objective</AbbreviatedIRI>
+        <Literal>Quality related object or objective the RDR needs to obtain (Source: ISO 9000).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Quality_Problem</AbbreviatedIRI>
+        <Literal>Identifies issues in Information Product&apos;s current quality relative to the required quality levels indicated in Quality Model Required..</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dqa:Quality_Problem</AbbreviatedIRI>
+        <Literal>Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:QuantitativeResult</AbbreviatedIRI>
+        <Literal>An annotation that associates a resource (especially, a dataset or a distribution) to another resource (for example, a document) that certifies the resource&apos;s quality according to a set of quality assessment rules. (Source:  ISO 19157)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Recoverability</AbbreviatedIRI>
+        <Literal>The degree to which a data product has attributes that enable it to maintain and preserve a specified level of operations and quality, even in the event of failure, in a specific context of use.(Source: ISO 25012)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:ReferenceMetadata</AbbreviatedIRI>
+        <Literal>This is metadata that describes the dataset as a whole, such as categorization of the dataset, its publisher, and a SPARQL endpoint where it can be accessed. External metadata is described in section 9.(Source: DataCube)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:ReferenceSource</AbbreviatedIRI>
+        <Literal>IDQAO:QualityAssessmentProcedure
+Superclass for different assessment procedures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:ReferenceSource</AbbreviatedIRI>
+        <Literal>ISO19157</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:ReferenceSource</AbbreviatedIRI>
+        <Literal>Reference work (Source: Oxford English Dictionary).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Repair</AbbreviatedIRI>
+        <Literal>Action on a nonconforming product or service to make it acceptable for the intended use (Source: ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Replace</AbbreviatedIRI>
+        <Literal>The act of editing a recipient by replacing an old object with a new object.
+(Source: Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Role</AbbreviatedIRI>
+        <Literal>A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end. (Source:PROV Ontology).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dqa:Scope</AbbreviatedIRI>
+        <Literal>Oxford English Dictionary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Scope</AbbreviatedIRI>
+        <Literal>Something aimed at or desired; something which one wishes to effect or attain; an end in view; an object, purpose, aim.(Source: Oxford English Dictionary).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Security</AbbreviatedIRI>
+        <Literal>The degree to which a data product is appropriately protected from damage or abuse (including unauthorized use or access).(Source: ISO 8000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Simplicity</AbbreviatedIRI>
+        <Literal>The extent of cognitive or representational complexity of data.(Source: ISO 25012)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Software</AbbreviatedIRI>
+        <Literal>ISO16363</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Software</AbbreviatedIRI>
+        <Literal>A software application (Source: Schema.org).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Standard</AbbreviatedIRI>
+        <Literal>Source: dcTerms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Standard</AbbreviatedIRI>
+        <Literal>A reference point against which other things can be evaluated or compared.(Source: Dublin Core).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Strategy</AbbreviatedIRI>
+        <Literal>Plan to achieve a long-term or overall objective (Source: ISO 9000).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:StructuralMetadata</AbbreviatedIRI>
+        <Literal>Having located an observation, we need certain metadata in order to be able to interpret it. What is the unit of measurement? Is it a normal value or a series break? Is the value measured or estimated? These metadata are provided as attributes and can be attached to individual observations, or to higher levels. (Source:  Data Cube)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Tool</AbbreviatedIRI>
+        <Literal>This class describes Tools, including cognitive tools such as Methods, Metrics, Dimensions, Division of Labor, etc. (Source: Activity Theory)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Traceability</AbbreviatedIRI>
+        <Literal>The ability to trace the history, application, or location of a data product.(Source: ISO 25012)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:Understandability</AbbreviatedIRI>
+        <Literal>The degree to which a data product has attributes that enable it to be read and interpreted by users.(Source: ISO 25012)
+
+Scenario
+Oscar a junior data curator at RDR Y, recently received a dataset from Dr. Bert, this was highly complex data that had too many technical words, so Oscar had to frequently refer to the documentation and the metadata to understand the data. However, he noticed that some of the words mentioned in the documentation were equally difficult to understand since Oscar didn’t have any technical background in that particular field. Confused he asked his senior curators to help them out, but from a few particular words, codes, and formulas he had to contact Dr. Bert for guidance.
+
+Solution scenario:
+ It is important that researchers realize that technical jargon can be difficult for a lot of people to understand. Hence, when trying to write documentation about technical data it is important to use layman’s terms and give explanations for subject specific concepts and codes so that everyone is able to understand them.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:User</AbbreviatedIRI>
+        <Literal>individual or group that interacts with a system or benefits from a system during its utilization (Source: ISO 25019)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:Vision</AbbreviatedIRI>
+        <Literal>Aspiration of what an organizaiton would like to become as expressed by top management (Source: ISO 9000).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:collects</AbbreviatedIRI>
+        <Literal>Indicates A is collected by B (Source: DataCite)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:contributes</AbbreviatedIRI>
+        <Literal>Indicate A is contributor of B
+(Source: : PROV Ontology, DataCite)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:creates</AbbreviatedIRI>
+        <Literal>Indicate A is creator of B
+(Source: : Schema.org, DDI)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:hasQualityActiveModel</AbbreviatedIRI>
+        <Literal>Indicates that a Quality Model is applicable to a specific InformationProduct
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:hasQualityProblem</AbbreviatedIRI>
+        <Literal>Connects inforamtion Product to its Quality Problems.
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:hasQualityRequiredModel</AbbreviatedIRI>
+        <Literal>This property indicates that there are specific required quality levels for an information product.
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:hasSource</AbbreviatedIRI>
+        <Literal>Connects Problem to Problem Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:identifierdBy</AbbreviatedIRI>
+        <Literal>Specifies that a QualityProblem is identified through specific QualityActiveModel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:involvedIn</AbbreviatedIRI>
+        <Literal>Indicate relationships between associated activities.
+Example: Agents may have communication between them about certain evaluation activities or their intervention activities.(Source:  ISO9000&apos;s Continous Improvement)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:isPartOf</AbbreviatedIRI>
+        <Literal>Indicate A is partial components of B (Source: OWL)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:prob_Activity_Contradiction</AbbreviatedIRI>
+        <Literal>Contradictions in and between activity components causing quality problems.
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:prob_Activity_Contradiction_Resource</AbbreviatedIRI>
+        <Literal>The DQA Resource Provision related problems, includes human resources, their expertise. (Source: ISO 8000 2016)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:prob_Activity_Contradiction_Tools</AbbreviatedIRI>
+        <Literal>Data management tool - infrastructure related problems. (Source: ISO 8000-2016)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:qualityMeasurementValue</AbbreviatedIRI>
+        <Literal>This property contains a value of a particular measurement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:qualityMeasurementValueRequired</AbbreviatedIRI>
+        <Literal>This property contains a value indicating the required level quality of a particular measurement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dqa:requiresExpertise</AbbreviatedIRI>
+        <Literal>Indicates information product requires domain expertise or skillset of Agents (Source:  IQAF)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dqa:verifies</AbbreviatedIRI>
+        <Literal>Establishes that the QualityActiveModel verifies compliance with a Quality Required Model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://purl.org/spar/datacite/AgentIdentifier</IRI>
+        <Literal>Identifier for agent (Source: DataCite)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/spar/datacite/Identifier</IRI>
+        <Literal>ISO16363</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://purl.org/spar/datacite/Identifier</IRI>
+        <Literal>The Identifier is a unique string that identifies a resource. (Source: DataCite)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://purl.org/spar/datacite/ResourceIdentifier</IRI>
+        <Literal>Identifier for resource (e.g., instruments) (Source: DataCite)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Action</IRI>
+        <Literal>DQA Activities are comprised of Actions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Activity_Type</IRI>
+        <Literal>Different type of data intervention activities. 
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Approve</IRI>
+        <Literal>To confirm authoritatively (Source: Oxford English Dictionary)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Ask</IRI>
+        <Literal>The act of posing a question / favor to someone.
+(Source: Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ask_permission_to_intervene</IRI>
+        <Literal>-Permission (ISO 9000): Action of giving formal authority (Source: ISO 9000).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Assign</IRI>
+        <Literal>The act of allocating an action/event/task to some destination (someone or something).
+(Source: Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Availability</IRI>
+        <Literal>The ability to perform as and when required.(Source: ISO 25012)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Comment</IRI>
+        <Literal>The act of generating a comment about a subject.
+(Source: Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Competency</IRI>
+        <Literal>Competency is a more comprehensive, encompassing concept than skills. It includes not only specific skills but also the knowledge, behaviors, and attitudes needed to perform a job successfully.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Confirm</IRI>
+        <Literal>The act of notifying someone that a future event/action is going to happen as expected.
+(Source: Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Creation</IRI>
+        <Literal>The action or process of bringing something into existence from nothing by divine or natural agency; the fact of being so created. (Source: Oxford English Dictionary).
+Creation in this context refers to an information product creation product. 
+Agents can enhance the quality of an information or data product by improving its creation process or reworking or scrapping the information product. 
+
+
+
+Source: Stvilia, B., Pang, Y., Lee, D. J., &amp; Gunaydin, F. (in press, 2024). Data quality assurance practices in research data repositories - A systematic literature review. An Annual Review of Information Science and Technology (ARIST) paper. Journal of the Association for Information Science and Technology. https://doi.org/10.1002/asi.24948</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DQA_Evaluation</IRI>
+        <Literal>Activity used to assess the design and implementation of the DQA process itself. This includes evaluating the design of DQA activities, as well as their technical and human infrastructure (e.g., the skills and training of DQA staff).
+
+Source: Stvilia, B., Pang, Y., Lee, D. J., &amp; Gunaydin, F. (in press, 2024). Data quality assurance practices in research data repositories - A systematic literature review. An Annual Review of Information Science and Technology (ARIST) paper. Journal of the Association for Information Science and Technology. https://doi.org/10.1002/asi.24948</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DQA_Intervention</IRI>
+        <Literal>Activity is used describe interventions in the DQA Process itself to improve the design of DQA activities, the quality of DQA infrastructure, or the DQA skills and training of staff.
+
+Source:  Stvilia, B., Pang, Y., Lee, D. J., &amp; Gunaydin, F. (in press, 2024). Data quality assurance practices in research data repositories - A systematic literature review. An Annual Review of Information Science and Technology (ARIST) paper. Journal of the Association for Information Science and Technology. https://doi.org/10.1002/asi.24948</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DQA_Process</IRI>
+        <Literal>Represents the overall data quality assurance process, encompassing all activities aimed at ensuring data quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DQA_Process_Improvement</IRI>
+        <Literal>This class describes the process of a DQA Process improvement itself.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Decontextualizing</IRI>
+        <Literal>Decontextualizing ― activities that use information outside its original context of creation
+(for instance, an activity may remove data products from their original contexts and
+aggregate them into a new collection to support specific information needs or tasks.) 
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Define</IRI>
+        <Literal>To determine the boundary or spatial extent of; to settle the limits of. (Source: Oxford English Dictionary)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Evaluation</IRI>
+        <Literal>Evaluation activity includes quality conceptualization and measurement. 
+Evaluation is performed by some Agent. 
+Its Objective is to evaluate an information product&apos;s quality. 
+Evaluation is comprised of Action. 
+It is mediated by Tool.
+
+
+Source: Stvilia, B., Pang, Y., Lee, D. J., &amp; Gunaydin, F. (in press, 2024). Data quality assurance practices in research data repositories - A systematic literature review. An Annual Review of Information Science and Technology (ARIST) paper. Journal of the Association for Information Science and Technology. https://doi.org/10.1002/asi.24948</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#FullInspection</IRI>
+        <Literal>determination of conformity to specified requirements (Source: ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Group</IRI>
+        <Literal>Used to describe the Agent type Group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#IndirectEvaluation</IRI>
+        <Literal>Method of evaluating the quality of a dataset based on external konwledge (Source: ISO 19157)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Inform</IRI>
+        <Literal>The act of notifying someone of information pertinent to them, with no expectation of a response.
+(Source: Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Interact</IRI>
+        <Literal>The act of interacting with another person or organization.
+(Source: Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Knowledge</IRI>
+        <Literal>Knowledge is a major component of competency. Competency demonstrates how well a person can use their knowledge (along with skills and behaviors) to perform effectively in a role or complete tasks successfully.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Measure</IRI>
+        <Literal>Process to determine a value (Source: ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Measurement</IRI>
+        <Literal>This is research measurements, research data (Source: Data Quality Vocabulary)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Method</IRI>
+        <Literal>the procedure used to evaluate the measure (Source: ISO 19157)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Monitor</IRI>
+        <Literal>determining the status of a system, a process, a product, a service, or an activity (Source: ISO 9000).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Objective</IRI>
+        <Literal>RDR&apos;s object - The objective the RDR needs to achieve.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Observation</IRI>
+        <Literal>A single observation in the cube, may have one or more associated measured values. (Source: Data Cube Vocabulary)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Observation</IRI>
+        <Literal>The action or an act of observing, watching, or noticing; the fact or condition of being watched or noticed; notice; perception. (Source:  Oxford English Dictionary)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Observe</IRI>
+        <Literal>To follow, practise, or keep to (a mode of existence or conduct, a habit); to maintain or uphold (a quality, state, or condition, now esp. a silence or neutrality).  (Source: Oxford English Dictionary)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Organize</IRI>
+        <Literal>The act of manipulating/administering/supervising/controlling one or more objects.
+(Source: Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Plan</IRI>
+        <Literal>A plan is an entity that represents a set of actions or steps intended by one or more agents to achieve some goals.
+(Source: PROV Ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Problem_Source</IRI>
+        <Literal>Data quality problem source.
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Process</IRI>
+        <Literal>Parent class for DQA Process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Provenance_Dependent</IRI>
+        <Literal>Provenance-Dependent activities will be affected by any quality deficiencies in the creation and mediation process metadata of the information product. 
+
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Quality_Measurement</IRI>
+        <Literal>Represents the evaluation of a specific data (Source: : DQV);
+Describes quality measurements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Rate</IRI>
+        <Literal>To be assessed or valued for purposes of taxation (Source: Oxford English Dictionary).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Release</IRI>
+        <Literal>permission to proceed to the next stage of a process (3.4.1) or the next process (Source: ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Representation_Dependent</IRI>
+        <Literal>Representation Dependent ― activities that depend on how well data represents another entity, phenomenon, or event. 
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Review</IRI>
+        <Literal>determination of the suitability, adequacy or effectiveness of an object to achieve established objectives (Source: ISO 9000).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Revision</IRI>
+        <Literal>A revision is a derivation for which the resulting entity is a revised version of some original. The implication here is that the resulting entity contains substantial content from the original. Revision is a particular case of derivation.
+
+(Source: Prov Ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Rework</IRI>
+        <Literal>action on a nonconforming (3.6.9) product (3.7.6) or service (3.7.7) to make it conform to the requirements (3.6.4).  (Source: ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#SampleBasedInspection</IRI>
+        <Literal>determination of conformity to specified requirements based on sample (Source: ISO 8000 &amp;9000).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Scrap</IRI>
+        <Literal>action on a nonconforming (3.6.9) product (3.7.6) or service (3.7.7) to preclude its originally intended use (Source: ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Share</IRI>
+        <Literal>The act of distributing content to people for their amusement or edification.
+(Source: Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Skill</IRI>
+        <Literal>Skill is a distinct ability or method that allows a person to complete tasks, typically developed through training or experience.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Stability_Dependent</IRI>
+        <Literal>Stability Dependent ― activities that depend on how stable the data product or its underlying entity(s) is
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Test</IRI>
+        <Literal>determination according to requirements for a specific intended use or application (Source: ISO 9000).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Update</IRI>
+        <Literal>The act of managing by changing/editing the state of the object.
+(Source: Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#affectsActivities</IRI>
+        <Literal>Relationship between data quality problem source and activity types
+(Source: IQAF, https://doi.org/10.1002/asi.20652)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#affectsDimensions</IRI>
+        <Literal>Relationship between data quality problem source and quality dimensions.
+(Source: IQAF, https://doi.org/10.1002/asi.20652)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#availableFunding</IRI>
+        <Literal>The amount of funding available for curating the dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#composedOf</IRI>
+        <Literal>Indicates A is composed of B (Source: ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#comprisedOf</IRI>
+        <Literal>Specifying something physically contained by something else. Typically used here for the underlying anatomical structures, such as organs, that comprise the anatomical system.
+(Source: : Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#cost</IRI>
+        <Literal>Any cost involved in the information products</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#criticalityValue</IRI>
+        <Literal>Contains a number indicating the relative VALUE of a dataset to RDR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#curates</IRI>
+        <Literal>Indicate A is curator of B
+(Source: : Schema.org, DDI)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#currentQuality</IRI>
+        <Literal>Note of current quality level or score of information product based on its evaluation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#evaluateDQA</IRI>
+        <Literal>connects the process of DQA Process Improvement to DQA Process Evaluation Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#interveneInDQA</IRI>
+        <Literal>Connects a DQA process to activities aimed at its improvement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#involvesCommunication</IRI>
+        <Literal>Links the DQA process to its communication activities, emphasizing the importance of documentation and discussion in quality assurance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#involvesEvaluation</IRI>
+        <Literal>Indicates that the DQA process involves a systematic evaluation of data products.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#involvesIntervention</IRI>
+        <Literal>Connects the DQA process to interventions that arise from the evaluation activities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isDescribedBy</IRI>
+        <Literal>A data product is described by the associated metadata product.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isMeasuredBy</IRI>
+        <Literal>This is an object propert that connects dimensions to metrics. In particular, a demension is measured by a specific metric(s).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#isMediatedBy</IRI>
+        <Literal>Indicates DQA activities are mediated by different types of tools. (Source: Activity Theory)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#isPerformedBy</IRI>
+        <Literal>Indicate agents&apos; contribution to DQA activities (Source:  Activity Theory)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#mediates</IRI>
+        <Literal>Of a person or other agency: to act as a mediator or intermediary; to intercede or intervene. In later use chiefly with between.(Source:  Activity Theory)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#playRole</IRI>
+        <Literal>A role is the function of an  agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end. (Source: PROV Ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#priority</IRI>
+        <Literal>Contains the ovarall criticality score for dataset based on its criticality VALUE, available funding, cost, current quality, and available expertise.
+
+thisdata  property connects Information Product to its relative priority to the RDR. 
+The RDR may prioritize a dataset for quality assurance based on t the value of the dataset, its quality level, the expertise it has in the subject the dataset belongs, the cost of ensuring its quality, and the funding provided by the depositor or funding bodies to ensure the dataset’s quality.
+
+Stvilia, B., Pang, Y., Lee, D. J., &amp; Gunaydin, F. (in press, 2024). Data quality assurance practices in research data repositories - A systematic literature review. An Annual Review of Information Science and Technology (ARIST) paper. Journal of the Association for Information Science and Technology. https://doi.org/10.1002/asi.24948</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#prob_Changes_In_Data_Entity</IRI>
+        <Literal>This class describes DQ problems caused by changes in the data itself.
+
+Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#prob_Changes_In_Underlying_Entity</IRI>
+        <Literal>This class represents a type of DQ problems that occur in a data product due to changes in its underlying entity(s).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#prob_Changes_In_Underlying_Entity</IRI>
+        <Literal>Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#prob_Context_Change</IRI>
+        <Literal>Any change in context, whether it be temporal or spatial, can change how DQ is
+understood and evaluated, and can lead to an DQ problem. An data product can be of good quality in its original context but can become of lower quality once it is moved to a different context.
+https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#prob_Context_Change</IRI>
+        <Literal>Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#prob_Mapping</IRI>
+        <Literal>Mapping-related data quality problems arise when there is incomplete, ambiguous, inaccurate, inconsistent, or redundant mapping between some state, phenomenon, event, or entity and data.
+https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#prob_Mapping</IRI>
+        <Literal>Source: Stvilia, B., Gasser, L., Twidale M., B., Smith L. C. (2007). A framework for information quality Assessment. Journal of the American Society for Information Science and Technology, 58(12), 1720-1733. https://doi.org/10.1002/asi.20652</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#provides</IRI>
+        <Literal>Indicates the source of information products (Source:  Schema.org)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#targets</IRI>
+        <Literal>The relationship between an action and its Target. (Source:  Web Annotation Voca.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#usedIn</IRI>
+        <Literal>Usage in &quot;usedIn&quot; is the beginning of utilizing a method by an activity. (Source: PROV Ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://www.w3.org/TR/prov-o#isAttributedTo</IRI>
+        <Literal>Attribution is the ascribing of an entity to an agent.
+
+(Source:  PROV Ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://www.w3.org/TR/prov-o#isDerivedFrom</IRI>
+        <Literal>A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.
+
+(Source:  PROV Ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://www.w3.org/TR/prov-o#isGeneratedBy</IRI>
+        <Literal>Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.
+
+(Source: PROV Ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/ns/dqv#Dimension</IRI>
+        <Literal>DDI; Dcube; DUV:Motivation; OA:Motivation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.w3.org/ns/dqv#Dimension</IRI>
+        <Literal>DDI:QualityScheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://www.w3.org/ns/dqv#Dimension</IRI>
+        <Literal>Measurable or spatial extent of any kind (Source: Oxford English Dictionary)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/ns/dqv#Metric</IRI>
+        <Literal>This class is used to describe Metrics that operationalize Dimensions for use in data Evaluation Activities.(Source: DQV).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://www.w3.org/ns/dqv#QualityAnnotation</IRI>
+        <Literal>Represents quality annotations, including ratings, quality certificates or feedback that can be associated to datasets or distributions. Quality annotations must have one oa:motivatedBy statement with an instance of oa:Motivation (and skos:Concept) that reflects a quality assessment purpose. We define this instance as dqv:qualityAssessment. (Source: DQV)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://www.w3.org/ns/dqv#QualityCertificate</IRI>
+        <Literal>An annotation that associates a resource (especially, a dataset or a distribution) to another resource (for example, a document) that certifies the resource&apos;s quality according to a set of quality assessment rules.(Source:  DQV)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://www.w3.org/ns/dqv#QualityPolicy</IRI>
+        <Literal>policy related to quality (Source: ISO 9000).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://www.w3.org/ns/dqv#UserQualityFeedback</IRI>
+        <Literal>&lt;customer satisfaction&gt; opinions, comments and expressions of interest in a product (3.7.6), a service (3.7.7) or a complaints-handling process (3.4.1) (Source: ISO 9000)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://www.w3.org/ns/dqv#isMeasurementOf</IRI>
+        <Literal>Indicates the metric being observed.
+(Source: DQV)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://www.w3.org/ns/oa#motivatedBy</IRI>
+        <Literal>The relationship between an Annotation and a Motivation that describes the reason for the Annotation&apos;s creation.
+
+(Source: Web Annotation Voca.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://www.w3.org/TR/prov-o/#Activity</IRI>
+        <Literal>An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.(Source: PROV Ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>https://www.w3.org/TR/prov-o/#Agent</IRI>
+        <Literal>AgentType (Source: Data Documentation Initiative)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>https://www.w3.org/TR/prov-o/#Agent</IRI>
+        <Literal>PROV:Agent
+An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent&apos;s activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://www.w3.org/TR/prov-o/#Organization</IRI>
+        <Literal>Used the Agent type - Organization; The condition of being organized; systematic ordering or arrangement (Source: Oxford English dictionary).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://www.w3.org/TR/prov-o/#Person</IRI>
+        <Literal>Used to describe the Agent type Person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://www.w3.org/TR/prov-o/#actedOnBehalfOf</IRI>
+        <Literal>Delegation is the assignment of authority and responsibility to an agent (by itself or by another agent) to carry out a specific activity as a delegate or representative, while the agent it acts on behalf of retains some responsibility for the outcome of the delegated work. For example, a student acted on behalf of his supervisor, who acted on behalf of the department chair, who acted on behalf of the university; all those agents are responsible in some way for the activity that took place but we do not say explicitly who bears responsibility and to what degree.
+
+(Source: PROV Ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://www.w3.org/TR/prov-o/#allocatedBy</IRI>
+        <Literal>AllocatedBy is the assignment of authority and responsibility to a role of agents to carry out a specific activity as a representative.
+
+(Source: prov:qualifiedDelegation, PROV Ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://www.w3.org/TR/prov-o/#hasPrimarySource</IRI>
+        <Literal>A primary source for a topic refers to something produced by some agent with direct experience and knowledge about the topic, at the time of the topic&apos;s study, without benefit from hindsight. Because of the directness of primary sources, they &apos;speak for themselves&apos; in ways that cannot be captured through the filter of secondary sources. As such, it is important for secondary sources to reference those primary sources from which they were derived, so that their reliability can be investigated. A primary source relation is a particular case of derivation of secondary materials from their primary sources. It is recognized that the determination of primary sources can be up to interpretation, and should be done according to conventions accepted within the application&apos;s domain.
+
+(Source:  PROV Ontology, WebAnnotation)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://www.w3.org/TR/prov-o/#isAssociatedWith</IRI>
+        <Literal>An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity.
+
+(Source:  PROV Ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://www.w3.org/TR/prov-o/#used</IRI>
+        <Literal>Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity.
+
+(Source:  PROV Ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://www.w3.org/TR/vocab-duv/#hasDistributor</IRI>
+        <Literal>The distributor is the organization that makes the dataset or distribution available for downloading and use.
+(Source:  Dataset Usage Vocabulary)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://www.w3.org/TR/vocab-duv/#hasFeedback</IRI>
+        <Literal>Agents provide feedback about data quality (Source:  Dataset Usage Voca.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://www.w3.org/TR/vocab-duv/#refersTo</IRI>
+        <Literal>Dataset/distribution associated with Usage.
+(Source: Dataset Usage Voca.)</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
