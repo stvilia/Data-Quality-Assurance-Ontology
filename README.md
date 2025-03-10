@@ -23,7 +23,7 @@ The paper provides a comprehensive explanation of the data quality assurance ont
 
 If you use the **Data Quality Assurance Ontology (DQAO)** in your research or project, please cite it as follows:
 
-Lee, D.J., Stvilia, B., Gunaydin, F., & Pang, Y. (2024). *Data Quality Assurance Ontology (DQAO)*. Available at: [https://github.com/stvilia/Data-Quality-Assurance-Ontology.git](https://github.com/stvilia/Data-Quality-Assurance-Ontology.git)
+Lee, D.J., Stvilia, B., Gunaydin, F., & Pang, Y. (2024). *Data Quality Assurance Ontology (DQAO) for research data repositories*. Available at: [https://github.com/stvilia/Data-Quality-Assurance-Ontology.git](https://github.com/stvilia/Data-Quality-Assurance-Ontology.git)
 
 Including this citation ensures proper acknowledgment of the authors' work and helps others find and use the ontology. For further details, refer to the companion paper linked in the [Usage](#usage) section.
 
