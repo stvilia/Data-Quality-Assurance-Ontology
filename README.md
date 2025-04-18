@@ -13,9 +13,7 @@ DQA is crucial for the effective sharing and reuse of research data. Despite the
 ## Usage
 Please refer to our companion paper for detailed guidance on the ontology:
 
-Lee, D.J., Stvilia, B., Gunaydin, F., & Pang, Y. (in press, 2024). Developing a data quality assurance ontology for research data repositories. Journal of Documentation. https://doi.org/10.1108/JD-09-2024-0212.
-or directly download the preprint version here:
-https://myweb.fsu.edu/bstvilia/papers/paper_ontology_preprint.pdf.
+Lee, D.J., Stvilia, B., Gunaydin, F. & Pang, Y., (2025).Developing a data quality assurance ontology for research data repositories. Journal of Documentation, 81(7), 63-84. https://doi.org/10.1108/JD-09-2024-0212
 
 The paper provides a comprehensive explanation of the data quality assurance ontology, including its development process, potential applicatons, and integration strategies with research data repositories.
 
